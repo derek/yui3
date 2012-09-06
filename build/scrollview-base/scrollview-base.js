@@ -130,9 +130,11 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
         // Cache these values, since they aren't going to change.
         sv._bb = sv.get(BOUNDING_BOX);
         sv._cb = sv.get(CONTENT_BOX);
+
+        // Cache some attributes
+        sv._cAxis = sv.get(AXIS);
         sv._cDecel = sv.get(DECELERATION);
         sv._cBounce = sv.get(BOUNCE);
-        sv._cAxis = sv.get(AXIS);
     },
 
     /**
@@ -144,16 +146,22 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
     bindUI: function () {
         var sv = this;
 
+        // Bind interaction listers
         sv._bindFlick(sv.get(FLICK));
         sv._bindDrag(sv.get(DRAG));
         sv._bindMousewheel(ScrollView.MOUSEWHEEL);
         
+        // Bind change events
         sv._bindAttrs();
 
         // IE SELECT HACK. See if we can do this non-natively and in the gesture for a future release.
         if (IE) {
             sv._fixIESelect(sv._bb, sv._cb);
         }
+
+        // Recalculate dimension properties
+        // TODO: This should be throttled.
+        Y.one(WINDOW).after('resize', sv._afterDimChange, sv);
     },
 
     /**
@@ -178,9 +186,6 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
             'heightChange': dimChangeHandler,
             'widthChange': dimChangeHandler
         });
-
-        // TODO: This should be throttled.
-        Y.one(WINDOW).after('resize', dimChangeHandler, sv);
     },
 
     /**
@@ -218,6 +223,9 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
 
         if (flick) {
             bb.on(FLICK + '|' + FLICK, Y.bind(sv._flick, sv), flick);
+
+            // Rebind Drag, becuase _onGestureMoveEnd always has to fire -after- _flick
+            sv._bindDrag(sv.get(DRAG));
         }
     },
 
@@ -524,6 +532,7 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
         // if a flick animation is in progress, cancel it
         if (sv._flickAnim) {
             sv._flickAnim.cancel();
+            sv._onTransEnd();
         }
 
         // TODO: Review if neccesary (#2530129)
@@ -571,7 +580,6 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
      * @private
      */
     _onGestureMove: function (e) {
-
         var sv = this,
             gesture = sv._gesture,
             svAxis = sv._cAxis,
@@ -614,48 +622,42 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
      * @private
      */
     _onGestureMoveEnd: function (e) {
+        var sv = this,
+            gesture = sv._gesture,
+            flick = gesture.flick,
+            clientX = e.clientX,
+            clientY = e.clientY,
+            isOOB;
 
-        // Y.later hack because _onGestureMoveEnd has to fire AFTER _flick,
-        // but that order can vary depending on when they are bound. 
-        // @TODO: Revisit, cause while this works, there's gotta be a better way
-        Y.later(1, this, function () {
-            var sv = this,
-                gesture = sv._gesture,
-                flick = gesture.flick,
-                clientX = e.clientX,
-                clientY = e.clientY,
-                isOOB;
+        if (sv._prevent.end) {
+            e.preventDefault();
+        }
 
-            if (sv._prevent.end) {
-                e.preventDefault();
-            }
+        // Store the end X/Y coordinates
+        gesture.endClientX = clientX;
+        gesture.endClientY = clientY;
 
-            // Store the end X/Y coordinates
-            gesture.endClientX = clientX;
-            gesture.endClientY = clientY;
+        // If this wasn't a flick, wrap up the gesture cycle
+        if (!flick) {
 
-            // If this wasn't a flick, wrap up the gesture cycle
-            if (!flick) {
+            // If there was movement (_onGestureMove fired)
+            if (gesture.deltaX !== null && gesture.deltaY !== null) {
 
-                // If there was movement (_onGestureMove fired)
-                if (gesture.deltaX !== null && gesture.deltaY !== null) {
+                // If we're out-out-bounds, then snapback
+                if (sv._isOOB()) {
+                    sv._snapBack();
+                }
 
-                    // If we're out-out-bounds, then snapback
-                    if (sv._isOOB()) {
-                        sv._snapBack();
-                    }
-
-                    // Inbounds
-                    else {
-                        // Don't fire scrollEnd on the gesture axis is the same as paginator's
-                        // Not totally confident this is ideal to access a plugin's properties from a host, @TODO revisit
-                        if (sv.pages && !sv.pages.get(AXIS)[gesture.axis]) {
-                            sv._onTransEnd();
-                        }
+                // Inbounds
+                else {
+                    // Don't fire scrollEnd on the gesture axis is the same as paginator's
+                    // Not totally confident this is ideal to access a plugin's properties from a host, @TODO revisit
+                    if (sv.pages && !sv.pages.get(AXIS)[gesture.axis]) {
+                        sv._onTransEnd();
                     }
                 }
             }
-        });
+        }
 
     },
 
@@ -829,13 +831,14 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
             maxY = sv._maxScrollY,
             newY = _constrain(currentY, minY, maxY),
             newX = _constrain(currentX, minX, maxX),
-            duration = ScrollView.SNAP_DURATION;
+            duration = ScrollView.SNAP_DURATION,
+            easing = ScrollView.SNAP_EASING;
 
         if (newX !== currentX) {
-            sv.set(SCROLL_X, newX, {duration:duration});
+            sv.set(SCROLL_X, newX, {duration:duration, easing:easing});
         }
         else if (newY !== currentY) {
-            sv.set(SCROLL_Y, newY, {duration:duration});
+            sv.set(SCROLL_Y, newY, {duration:duration, easing:easing});
         }
         else {
             // It shouldn't ever get here, but in case it does, fire scrollEnd
@@ -1142,14 +1145,14 @@ Y.ScrollView = Y.extend(ScrollView, Y.Widget, {
     BOUNCE_RANGE: 150,
 
     /**
-     * The interval used when animating the flick
+     * The interval (ms) used when animating the flick
      *
      * @property FRAME_STEP
      * @type Number
      * @static
-     * @default 16
+     * @default 30
      */
-    FRAME_STEP: 16,
+    FRAME_STEP: 30,
 
     /**
      * The default easing used when animating the flick

@@ -45,25 +45,40 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
      * @param {config} Configuration object for the plugin
      */
     initializer: function (config) {
-        
         var paginator = this,
             host = paginator.get(HOST);
 
-        // Default it to an empty object
-        config = config || {};
+        paginator._pageDims = [];
+        paginator.padding = 1;
+        paginator.optimizeMemory = false;
 
         // Initialize & default
-        paginator.optimizeMemory = config.optimizeMemory || false;
-        paginator.padding = config.padding || 1;
-        paginator._pageDims = [];
+        if (config.optimizeMemory) {
+            paginator.optimizeMemory = config.optimizeMemory;
+        }
+        
+        if (config.padding) {
+            paginator.padding = config.padding;
+        }
 
         // Cache some values
         paginator._host = host;
         paginator._bb = host._bb;
         paginator._cb = host._cb;
-        paginator._cIndex = config.index || 0;
+        paginator._cIndex = paginator.get(INDEX);
         paginator._cAxis = paginator.get(AXIS);
-        paginator._prevent = new Y.Do.Prevent();
+
+        paginator._bindAttrs();
+    },
+
+    /**
+     * 
+     *
+     * @method _bindAttrs
+     * @private
+     */
+    _bindAttrs: function () {
+        var paginator = this;
 
         // Event listeners
         paginator.after({
@@ -119,7 +134,7 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
         // Add the paginator class
         bb.addClass(CLASS_PAGED);
 
-        // paginator._optimize();
+        paginator._optimize();
     },
 
     /**
@@ -132,21 +147,19 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
     _afterHostSyncUI: function (e) {
         var paginator = this,
             host = paginator._host,
-            hostFlick = host.get(FLICK);
+            hostFlick = host.get(FLICK),
+            paginatorAxis;
 
         // If paginator's 'axis' property is to be automatically determined, inherit host's property
         if (paginator._cAxis === undefined) {
             paginator._set(AXIS, host.get(AXIS));
         }
-        
+
+        paginatorAxis = paginator.get(AXIS);
+
         // Don't allow flicks on the paginated axis
-        if (paginator._cAxis[DIM_X]) {
-            hostFlick.axis = DIM_Y;
-            host.set(FLICK, hostFlick);
-        }
-        else if (paginator._cAxis[DIM_Y]) {
-            hostFlick.axis = DIM_X;
-            host.set(FLICK, hostFlick);
+        if (paginatorAxis[hostFlick.axis]) {
+            host.set(FLICK, false);
         }
     },
 
@@ -298,7 +311,7 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
             e.preventDefault();
 
             // Block host._mousewheel from running
-            return paginator._prevent;
+            return new Y.Do.Prevent();
         }
     },
 
@@ -343,6 +356,9 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
             gesture = host._gesture,
             gestureAxis = gesture && gesture.axis;
 
+        // Cache the new index value
+        paginator._cIndex = index;
+
         if (gestureAxis === DIM_Y) {
             host._maxScrollX = maxScrollX;
             host.set(SCROLL_X, paginator._pageDims[index].scrollX, { src: UI });
@@ -350,9 +366,6 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
             host._maxScrollY = maxScrollY;
             host.set(SCROLL_Y, paginator._pageDims[index].scrollY, { src: UI });
         }
-
-        // Cache the new index value
-        paginator._cIndex = index;
 
         if (e.src !== UI) {
             paginator.scrollToIndex(index);
@@ -370,7 +383,7 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
         if (!this.optimizeMemory) {
             return false;
         }
-
+console.log('_optimize');
         var paginator = this,
             host = paginator._host,
             optimizeMemory = paginator.optimizeMemory,
@@ -379,6 +392,7 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
 
         // Show the pages in/near the viewport & hide the rest
         pageNodes = paginator._getStage(currentIndex);
+        console.log(pageNodes);
         paginator._showNodes(pageNodes.visible);
         paginator._hideNodes(pageNodes.hidden);
     },
@@ -501,7 +515,6 @@ Y.extend(PaginatorPlugin, Y.Plugin.Base, {
      * @param {String} [easing] The timing function to use in the animation
      */
     scrollToIndex: function (index, duration, easing) {
-
         var paginator = this,
             host = paginator._host,
             pageNode = paginator._getPageNodes().item(index),
