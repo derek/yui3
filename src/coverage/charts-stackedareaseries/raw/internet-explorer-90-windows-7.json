@@ -1,0 +1,186 @@
+{
+    "build/series-area-stacked/series-area-stacked.js": {
+        "path": "build/series-area-stacked/series-area-stacked.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1
+        },
+        "b": {},
+        "f": {
+            "1": 1,
+            "2": 1,
+            "3": 1
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 31
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 50
+                    }
+                }
+            },
+            "2": {
+                "name": "(anonymous_2)",
+                "line": 27,
+                "loc": {
+                    "start": {
+                        "line": 27,
+                        "column": 17
+                    },
+                    "end": {
+                        "line": 28,
+                        "column": 4
+                    }
+                }
+            },
+            "3": {
+                "name": "(anonymous_3)",
+                "line": 40,
+                "loc": {
+                    "start": {
+                        "line": 40,
+                        "column": 13
+                    },
+                    "end": {
+                        "line": 41,
+                        "column": 4
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 60,
+                    "column": 65
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 19,
+                    "column": 0
+                },
+                "end": {
+                    "line": 57,
+                    "column": 3
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 29,
+                    "column": 8
+                },
+                "end": {
+                    "line": 29,
+                    "column": 63
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 30,
+                    "column": 8
+                },
+                "end": {
+                    "line": 30,
+                    "column": 43
+                }
+            },
+            "5": {
+                "start": {
+                    "line": 42,
+                    "column": 8
+                },
+                "end": {
+                    "line": 42,
+                    "column": 67
+                }
+            }
+        },
+        "branchMap": {},
+        "code": [
+            "(function () { YUI.add('series-area-stacked', function (Y, NAME) {",
+            "",
+            "/**",
+            " * Provides functionality for creating a stacked area series.",
+            " *",
+            " * @module charts",
+            " * @submodule series-area-stacked",
+            " */",
+            "/**",
+            " * StackedAreaSeries area fills to display data showing its contribution to a whole.",
+            " *",
+            " * @class StackedAreaSeries",
+            " * @extends AreaSeries",
+            " * @uses StackingUtil",
+            " * @constructor",
+            " * @param {Object} config (optional) Configuration parameters.",
+            " * @submodule series-area-stacked",
+            " */",
+            "Y.StackedAreaSeries = Y.Base.create(\"stackedAreaSeries\", Y.AreaSeries, [Y.StackingUtil], {",
+            "    /**",
+            "     * @protected",
+            "     *",
+            "     * Calculates the coordinates for the series. Overrides base implementation.",
+            "     *",
+            "     * @method setAreaData",
+            "     */",
+            "    setAreaData: function()",
+            "    {",
+            "        Y.StackedAreaSeries.superclass.setAreaData.apply(this);",
+            "        this._stackCoordinates.apply(this);",
+            "    },",
+            "",
+            "    /**",
+            "     * @protected",
+            "     *",
+            "     * Draws the series",
+            "     *",
+            "     * @method drawSeries",
+            "     */",
+            "\tdrawSeries: function()",
+            "    {",
+            "        this.drawFill.apply(this, this._getStackedClosingPoints());",
+            "    }",
+            "}, {",
+            "    ATTRS: {",
+            "        /**",
+            "         * Read-only attribute indicating the type of series.",
+            "         *",
+            "         * @attribute type",
+            "         * @type String",
+            "         * @default stackedArea",
+            "         */",
+            "        type: {",
+            "            value:\"stackedArea\"",
+            "        }",
+            "    }",
+            "});",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"series-stacked\", \"series-area\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "19": 1,
+            "29": 1,
+            "30": 1,
+            "42": 1
+        }
+    }
+}

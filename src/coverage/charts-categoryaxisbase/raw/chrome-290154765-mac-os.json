@@ -1,0 +1,884 @@
+{
+    "build/axis-category-base/axis-category-base.js": {
+        "path": "build/axis-category-base/axis-category-base.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 18,
+            "8": 18,
+            "9": 13,
+            "10": 13,
+            "11": 12,
+            "12": 13,
+            "13": 286,
+            "14": 286,
+            "15": 286,
+            "16": 13,
+            "17": 13,
+            "18": 4,
+            "19": 1,
+            "20": 4,
+            "21": 4,
+            "22": 3,
+            "23": 1,
+            "24": 1,
+            "25": 67,
+            "26": 67,
+            "27": 66,
+            "28": 67,
+            "29": 1,
+            "30": 1
+        },
+        "b": {
+            "1": [
+                12,
+                1
+            ],
+            "2": [
+                1,
+                3
+            ],
+            "3": [
+                3,
+                1
+            ],
+            "4": [
+                4,
+                3
+            ],
+            "5": [
+                66,
+                1
+            ],
+            "6": [
+                67,
+                66
+            ]
+        },
+        "f": {
+            "1": 1,
+            "2": 17,
+            "3": 1,
+            "4": 18,
+            "5": 13,
+            "6": 4,
+            "7": 1,
+            "8": 67
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 30
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 49
+                    }
+                }
+            },
+            "2": {
+                "name": "CategoryImpl",
+                "line": 21,
+                "loc": {
+                    "start": {
+                        "line": 21,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 22,
+                        "column": 0
+                    }
+                }
+            },
+            "3": {
+                "name": "(anonymous_3)",
+                "line": 59,
+                "loc": {
+                    "start": {
+                        "line": 59,
+                        "column": 17
+                    },
+                    "end": {
+                        "line": 60,
+                        "column": 4
+                    }
+                }
+            },
+            "4": {
+                "name": "(anonymous_4)",
+                "line": 96,
+                "loc": {
+                    "start": {
+                        "line": 96,
+                        "column": 22
+                    },
+                    "end": {
+                        "line": 97,
+                        "column": 4
+                    }
+                }
+            },
+            "5": {
+                "name": "(anonymous_5)",
+                "line": 111,
+                "loc": {
+                    "start": {
+                        "line": 111,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 112,
+                        "column": 4
+                    }
+                }
+            },
+            "6": {
+                "name": "(anonymous_6)",
+                "line": 139,
+                "loc": {
+                    "start": {
+                        "line": 139,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 140,
+                        "column": 4
+                    }
+                }
+            },
+            "7": {
+                "name": "(anonymous_7)",
+                "line": 161,
+                "loc": {
+                    "start": {
+                        "line": 161,
+                        "column": 24
+                    },
+                    "end": {
+                        "line": 162,
+                        "column": 4
+                    }
+                }
+            },
+            "8": {
+                "name": "(anonymous_8)",
+                "line": 174,
+                "loc": {
+                    "start": {
+                        "line": 174,
+                        "column": 19
+                    },
+                    "end": {
+                        "line": 175,
+                        "column": 4
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 201,
+                    "column": 45
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 21,
+                    "column": 0
+                },
+                "end": {
+                    "line": 23,
+                    "column": 1
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 25,
+                    "column": 0
+                },
+                "end": {
+                    "line": 25,
+                    "column": 35
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 27,
+                    "column": 0
+                },
+                "end": {
+                    "line": 49,
+                    "column": 2
+                }
+            },
+            "5": {
+                "start": {
+                    "line": 51,
+                    "column": 0
+                },
+                "end": {
+                    "line": 184,
+                    "column": 2
+                }
+            },
+            "6": {
+                "start": {
+                    "line": 61,
+                    "column": 8
+                },
+                "end": {
+                    "line": 61,
+                    "column": 19
+                }
+            },
+            "7": {
+                "start": {
+                    "line": 98,
+                    "column": 8
+                },
+                "end": {
+                    "line": 98,
+                    "column": 69
+                }
+            },
+            "8": {
+                "start": {
+                    "line": 99,
+                    "column": 8
+                },
+                "end": {
+                    "line": 99,
+                    "column": 30
+                }
+            },
+            "9": {
+                "start": {
+                    "line": 113,
+                    "column": 8
+                },
+                "end": {
+                    "line": 117,
+                    "column": 30
+                }
+            },
+            "10": {
+                "start": {
+                    "line": 118,
+                    "column": 8
+                },
+                "end": {
+                    "line": 121,
+                    "column": 9
+                }
+            },
+            "11": {
+                "start": {
+                    "line": 120,
+                    "column": 12
+                },
+                "end": {
+                    "line": 120,
+                    "column": 31
+                }
+            },
+            "12": {
+                "start": {
+                    "line": 122,
+                    "column": 8
+                },
+                "end": {
+                    "line": 127,
+                    "column": 9
+                }
+            },
+            "13": {
+                "start": {
+                    "line": 124,
+                    "column": 12
+                },
+                "end": {
+                    "line": 124,
+                    "column": 26
+                }
+            },
+            "14": {
+                "start": {
+                    "line": 125,
+                    "column": 12
+                },
+                "end": {
+                    "line": 125,
+                    "column": 26
+                }
+            },
+            "15": {
+                "start": {
+                    "line": 126,
+                    "column": 12
+                },
+                "end": {
+                    "line": 126,
+                    "column": 33
+                }
+            },
+            "16": {
+                "start": {
+                    "line": 128,
+                    "column": 8
+                },
+                "end": {
+                    "line": 128,
+                    "column": 36
+                }
+            },
+            "17": {
+                "start": {
+                    "line": 129,
+                    "column": 8
+                },
+                "end": {
+                    "line": 129,
+                    "column": 22
+                }
+            },
+            "18": {
+                "start": {
+                    "line": 141,
+                    "column": 8
+                },
+                "end": {
+                    "line": 144,
+                    "column": 9
+                }
+            },
+            "19": {
+                "start": {
+                    "line": 143,
+                    "column": 12
+                },
+                "end": {
+                    "line": 143,
+                    "column": 29
+                }
+            },
+            "20": {
+                "start": {
+                    "line": 145,
+                    "column": 8
+                },
+                "end": {
+                    "line": 145,
+                    "column": 33
+                }
+            },
+            "21": {
+                "start": {
+                    "line": 146,
+                    "column": 8
+                },
+                "end": {
+                    "line": 149,
+                    "column": 9
+                }
+            },
+            "22": {
+                "start": {
+                    "line": 148,
+                    "column": 12
+                },
+                "end": {
+                    "line": 148,
+                    "column": 31
+                }
+            },
+            "23": {
+                "start": {
+                    "line": 150,
+                    "column": 8
+                },
+                "end": {
+                    "line": 150,
+                    "column": 20
+                }
+            },
+            "24": {
+                "start": {
+                    "line": 163,
+                    "column": 8
+                },
+                "end": {
+                    "line": 163,
+                    "column": 39
+                }
+            },
+            "25": {
+                "start": {
+                    "line": 176,
+                    "column": 8
+                },
+                "end": {
+                    "line": 177,
+                    "column": 36
+                }
+            },
+            "26": {
+                "start": {
+                    "line": 178,
+                    "column": 8
+                },
+                "end": {
+                    "line": 181,
+                    "column": 9
+                }
+            },
+            "27": {
+                "start": {
+                    "line": 180,
+                    "column": 12
+                },
+                "end": {
+                    "line": 180,
+                    "column": 37
+                }
+            },
+            "28": {
+                "start": {
+                    "line": 182,
+                    "column": 8
+                },
+                "end": {
+                    "line": 182,
+                    "column": 21
+                }
+            },
+            "29": {
+                "start": {
+                    "line": 186,
+                    "column": 0
+                },
+                "end": {
+                    "line": 186,
+                    "column": 30
+                }
+            },
+            "30": {
+                "start": {
+                    "line": 198,
+                    "column": 0
+                },
+                "end": {
+                    "line": 198,
+                    "column": 85
+                }
+            }
+        },
+        "branchMap": {
+            "1": {
+                "line": 118,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 118,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 118,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "2": {
+                "line": 141,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 141,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 141,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 141,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 141,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "3": {
+                "line": 146,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 146,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 146,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 146,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 146,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "line": 146,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 146,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 146,
+                            "column": 15
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 146,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 146,
+                            "column": 30
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "line": 178,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 178,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 178,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 178,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 178,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "6": {
+                "line": 178,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 178,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 178,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 178,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 178,
+                            "column": 40
+                        }
+                    }
+                ]
+            }
+        },
+        "code": [
+            "(function () { YUI.add('axis-category-base', function (Y, NAME) {",
+            "",
+            "/**",
+            " * Provides functionality for the handling of category axis data for a chart.",
+            " *",
+            " * @module charts",
+            " * @submodule axis-category-base",
+            " */",
+            "",
+            "/**",
+            " * CategoryImpl contains logic for managing category data. CategoryImpl is used by the following classes:",
+            " * <ul>",
+            " *      <li>{{#crossLink \"CategoryAxisBase\"}}{{/crossLink}}</li>",
+            " *      <li>{{#crossLink \"CategoryAxis\"}}{{/crossLink}}</li>",
+            " *  </ul>",
+            " *",
+            " * @class CategoryImpl",
+            " * @constructor",
+            " * @submodule axis-category-base",
+            " */",
+            "function CategoryImpl()",
+            "{",
+            "}",
+            "",
+            "CategoryImpl.NAME = \"categoryImpl\";",
+            "",
+            "CategoryImpl.ATTRS = {",
+            "    /**",
+            "     * Determines whether and offset is automatically calculated for the edges of the axis.",
+            "     *",
+            "     * @attribute calculateEdgeOffset",
+            "     * @type Boolean",
+            "     */",
+            "    calculateEdgeOffset: {",
+            "        value: true",
+            "    }",
+            "",
+            "    /**",
+            "     * Method used for formatting a label. This attribute allows for the default label formatting method to overridden.",
+            "     * The method use would need to implement the arguments below and return a `String` or `HTMLElement`.",
+            "     * <dl>",
+            "     *      <dt>val</dt><dd>Label to be formatted. (`String`)</dd>",
+            "     *      <dt>format</dt><dd>Template for formatting label. (optional)</dd>",
+            "     * </dl>",
+            "     *",
+            "     * @attribute labelFunction",
+            "     * @type Function",
+            "     */",
+            "};",
+            "",
+            "CategoryImpl.prototype = {",
+            "    /**",
+            "     * Formats a label based on the axis type and optionally specified format.",
+            "     *",
+            "     * @method formatLabel",
+            "     * @param {Object} value",
+            "     * @return String",
+            "     */",
+            "    formatLabel: function(val)",
+            "    {",
+            "        return val;",
+            "    },",
+            "",
+            "    /**",
+            "     * Object storing key data.",
+            "     *",
+            "     * @property _indices",
+            "     * @private",
+            "     */",
+            "    _indices: null,",
+            "",
+            "    /**",
+            "     * Constant used to generate unique id.",
+            "     *",
+            "     * @property GUID",
+            "     * @type String",
+            "     * @private",
+            "     */",
+            "    GUID: \"yuicategoryaxis\",",
+            "",
+            "    /**",
+            "     * Type of data used in `Data`.",
+            "     *",
+            "     * @property _dataType",
+            "     * @readOnly",
+            "     * @private",
+            "     */",
+            "    _type: \"category\",",
+            "",
+            "    /**",
+            "     * Calculates the maximum and minimum values for the `Data`.",
+            "     *",
+            "     * @method _updateMinAndMax",
+            "     * @private",
+            "     */",
+            "    _updateMinAndMax: function()",
+            "    {",
+            "        this._dataMaximum = Math.max(this.get(\"data\").length - 1, 0);",
+            "        this._dataMinimum = 0;",
+            "    },",
+            "",
+            "    /**",
+            "     * Gets an array of values based on a key.",
+            "     *",
+            "     * @method _getKeyArray",
+            "     * @param {String} key Value key associated with the data array.",
+            "     * @param {Array} data Array in which the data resides.",
+            "     * @return Array",
+            "     * @private",
+            "     */",
+            "    _getKeyArray: function(key, data)",
+            "    {",
+            "        var i = 0,",
+            "            obj,",
+            "            keyArr = [],",
+            "            labels = [],",
+            "            len = data.length;",
+            "        if(!this._indices)",
+            "        {",
+            "            this._indices = {};",
+            "        }",
+            "        for(; i < len; ++i)",
+            "        {",
+            "            obj = data[i];",
+            "            keyArr[i] = i;",
+            "            labels[i] = obj[key];",
+            "        }",
+            "        this._indices[key] = keyArr;",
+            "        return labels;",
+            "    },",
+            "",
+            "    /**",
+            "     * Returns an array of values based on an identifier key.",
+            "     *",
+            "     * @method getDataByKey",
+            "     * @param {String} value value used to identify the array",
+            "     * @return Array",
+            "     */",
+            "    getDataByKey: function (value)",
+            "    {",
+            "        if(!this._indices)",
+            "        {",
+            "            this.get(\"keys\");",
+            "        }",
+            "        var keys = this._indices;",
+            "        if(keys && keys[value])",
+            "        {",
+            "            return keys[value];",
+            "        }",
+            "        return null;",
+            "    },",
+            "",
+            "    /**",
+            "     * Returns the total number of majorUnits that will appear on an axis.",
+            "     *",
+            "     * @method getTotalMajorUnits",
+            "     * @param {Object} majorUnit Object containing properties related to the majorUnit.",
+            "     * @param {Number} len Length of the axis.",
+            "     * @return Number",
+            "     */",
+            "    getTotalMajorUnits: function()",
+            "    {",
+            "        return this.get(\"data\").length;",
+            "    },",
+            "",
+            "    /**",
+            "     * Returns a value based of a key value and an index.",
+            "     *",
+            "     * @method getKeyValueAt",
+            "     * @param {String} key value used to look up the correct array",
+            "     * @param {Number} index within the array",
+            "     * @return String",
+            "     */",
+            "    getKeyValueAt: function(key, index)",
+            "    {",
+            "        var value = NaN,",
+            "            keys = this.get(\"keys\");",
+            "        if(keys[key] && keys[key][index])",
+            "        {",
+            "            value = keys[key][index];",
+            "        }",
+            "        return value;",
+            "    }",
+            "};",
+            "",
+            "Y.CategoryImpl = CategoryImpl;",
+            "",
+            "/**",
+            " * CategoryAxisBase manages category data for an axis.",
+            " *",
+            " * @class CategoryAxisBase",
+            " * @constructor",
+            " * @extends AxisBase",
+            " * @uses CategoryImpl",
+            " * @param {Object} config (optional) Configuration parameters.",
+            " * @submodule axis-category-base",
+            " */",
+            "Y.CategoryAxisBase = Y.Base.create(\"categoryAxisBase\", Y.AxisBase, [Y.CategoryImpl]);",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"axis-base\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "21": 1,
+            "25": 1,
+            "27": 1,
+            "51": 1,
+            "61": 1,
+            "98": 18,
+            "99": 18,
+            "113": 13,
+            "118": 13,
+            "120": 12,
+            "122": 13,
+            "124": 286,
+            "125": 286,
+            "126": 286,
+            "128": 13,
+            "129": 13,
+            "141": 4,
+            "143": 1,
+            "145": 4,
+            "146": 4,
+            "148": 3,
+            "150": 1,
+            "163": 1,
+            "176": 67,
+            "178": 67,
+            "180": 66,
+            "182": 67,
+            "186": 1,
+            "198": 1
+        }
+    }
+}

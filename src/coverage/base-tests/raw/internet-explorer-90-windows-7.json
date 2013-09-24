@@ -1,0 +1,4088 @@
+{
+    "build/base-base/base-base.js": {
+        "path": "build/base-base/base-base.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 44,
+            "5": 44,
+            "6": 44,
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+        },
+        "b": {},
+        "f": {
+            "1": 1,
+            "2": 44
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 21
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 40
+                    }
+                }
+            },
+            "2": {
+                "name": "Base",
+                "line": 85,
+                "loc": {
+                    "start": {
+                        "line": 85,
+                        "column": 4
+                    },
+                    "end": {
+                        "line": 85,
+                        "column": 20
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 184,
+                    "column": 82
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 19,
+                    "column": 4
+                },
+                "end": {
+                    "line": 22,
+                    "column": 43
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 85,
+                    "column": 4
+                },
+                "end": {
+                    "line": 89,
+                    "column": 5
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 86,
+                    "column": 8
+                },
+                "end": {
+                    "line": 86,
+                    "column": 40
+                }
+            },
+            "5": {
+                "start": {
+                    "line": 87,
+                    "column": 8
+                },
+                "end": {
+                    "line": 87,
+                    "column": 46
+                }
+            },
+            "6": {
+                "start": {
+                    "line": 88,
+                    "column": 8
+                },
+                "end": {
+                    "line": 88,
+                    "column": 47
+                }
+            },
+            "7": {
+                "start": {
+                    "line": 100,
+                    "column": 4
+                },
+                "end": {
+                    "line": 100,
+                    "column": 73
+                }
+            },
+            "8": {
+                "start": {
+                    "line": 117,
+                    "column": 4
+                },
+                "end": {
+                    "line": 117,
+                    "column": 88
+                }
+            },
+            "9": {
+                "start": {
+                    "line": 133,
+                    "column": 4
+                },
+                "end": {
+                    "line": 133,
+                    "column": 23
+                }
+            },
+            "10": {
+                "start": {
+                    "line": 149,
+                    "column": 4
+                },
+                "end": {
+                    "line": 149,
+                    "column": 60
+                }
+            },
+            "11": {
+                "start": {
+                    "line": 170,
+                    "column": 4
+                },
+                "end": {
+                    "line": 170,
+                    "column": 44
+                }
+            },
+            "12": {
+                "start": {
+                    "line": 172,
+                    "column": 4
+                },
+                "end": {
+                    "line": 172,
+                    "column": 42
+                }
+            },
+            "13": {
+                "start": {
+                    "line": 173,
+                    "column": 4
+                },
+                "end": {
+                    "line": 173,
+                    "column": 49
+                }
+            },
+            "14": {
+                "start": {
+                    "line": 176,
+                    "column": 4
+                },
+                "end": {
+                    "line": 176,
+                    "column": 47
+                }
+            },
+            "15": {
+                "start": {
+                    "line": 179,
+                    "column": 4
+                },
+                "end": {
+                    "line": 179,
+                    "column": 38
+                }
+            },
+            "16": {
+                "start": {
+                    "line": 181,
+                    "column": 4
+                },
+                "end": {
+                    "line": 181,
+                    "column": 18
+                }
+            }
+        },
+        "branchMap": {},
+        "code": [
+            "(function () { YUI.add('base-base', function (Y, NAME) {",
+            "",
+            "    /**",
+            "     * The base module provides the Base class, which objects requiring attribute and custom event support can extend.",
+            "     * The module also provides two ways to reuse code - It augments Base with the Plugin.Host interface which provides",
+            "     * plugin support and also provides the BaseCore.build method which provides a way to build custom classes using extensions.",
+            "     *",
+            "     * @module base",
+            "     */",
+            "",
+            "    /**",
+            "     * The base-base submodule provides the Base class without the Plugin support, provided by Plugin.Host,",
+            "     * and without the extension support provided by BaseCore.build.",
+            "     *",
+            "     * @module base",
+            "     * @submodule base-base",
+            "     */",
+            "",
+            "    var AttributeCore   = Y.AttributeCore,",
+            "        AttributeExtras = Y.AttributeExtras,",
+            "        BaseCore        = Y.BaseCore,",
+            "        BaseObservable  = Y.BaseObservable;",
+            "",
+            "    /**",
+            "     * <p>",
+            "     * A base class which objects requiring attributes and custom event support can",
+            "     * extend. Base also handles the chaining of initializer and destructor methods across",
+            "     * the hierarchy as part of object construction and destruction. Additionally, attributes configured",
+            "     * through the static <a href=\"#property_ATTRS\">ATTRS</a> property for each class",
+            "     * in the hierarchy will be initialized by Base.",
+            "     * </p>",
+            "     *",
+            "     * <p>",
+            "     * **NOTE:** Prior to version 3.11.0, ATTRS would get added a class at a time. That is,",
+            "     * Base would loop through each class in the hierarchy, and add the class' ATTRS, and",
+            "     * then call it's initializer, and move on to the subclass' ATTRS and initializer. As of",
+            "     * 3.11.0, ATTRS from all classes in the hierarchy are added in one `addAttrs` call before",
+            "     * any initializers are called. This fixes subtle edge-case issues with subclass ATTRS overriding",
+            "     * superclass `setter`, `getter` or `valueFn` definitions and being unable to get/set attributes",
+            "     * defined by the subclass. This order of operation change may impact `setter`, `getter` or `valueFn`",
+            "     * code which expects a superclass' initializer to have run. This is expected to be rare, but to support",
+            "     * it, Base supports a `_preAddAttrs()`, method hook (same signature as `addAttrs`). Components can",
+            "     * implement this method on their prototype for edge cases which do require finer control over",
+            "     * the order in which attributes are added (see widget-htmlparser).",
+            "     * </p>",
+            "     *",
+            "     * <p>",
+            "     * The static <a href=\"#property_NAME\">NAME</a> property of each class extending",
+            "     * from Base will be used as the identifier for the class, and is used by Base to prefix",
+            "     * all events fired by instances of that class.",
+            "     * </p>",
+            "     *",
+            "     * @class Base",
+            "     * @constructor",
+            "     * @uses BaseCore",
+            "     * @uses BaseObservable",
+            "     * @uses AttributeCore",
+            "     * @uses AttributeObservable",
+            "     * @uses AttributeExtras",
+            "     * @uses EventTarget",
+            "     *",
+            "     * @param {Object} config Object with configuration property name/value pairs. The object can be",
+            "     * used to provide default values for the objects published attributes.",
+            "     *",
+            "     * <p>",
+            "     * The config object can also contain the following non-attribute properties, providing a convenient",
+            "     * way to configure events listeners and plugins for the instance, as part of the constructor call:",
+            "     * </p>",
+            "     *",
+            "     * <dl>",
+            "     *   <dt>on</dt>",
+            "     *   <dd>An event name to listener function map, to register event listeners for the \"on\" moment of the event.",
+            "     *       A constructor convenience property for the <a href=\"Base.html#method_on\">on</a> method.</dd>",
+            "     *   <dt>after</dt>",
+            "     *   <dd>An event name to listener function map, to register event listeners for the \"after\" moment of the event.",
+            "     *       A constructor convenience property for the <a href=\"Base.html#method_after\">after</a> method.</dd>",
+            "     *   <dt>bubbleTargets</dt>",
+            "     *   <dd>An object, or array of objects, to register as bubble targets for bubbled events fired by this instance.",
+            "     *       A constructor convenience property for the <a href=\"EventTarget.html#method_addTarget\">addTarget</a> method.</dd>",
+            "     *   <dt>plugins</dt>",
+            "     *   <dd>A plugin, or array of plugins to be plugged into the instance (see PluginHost's plug method for signature details).",
+            "     *       A constructor convenience property for the <a href=\"Plugin.Host.html#method_plug\">plug</a> method.</dd>",
+            "     * </dl>",
+            "     */",
+            "    function Base() {",
+            "        BaseCore.apply(this, arguments);",
+            "        BaseObservable.apply(this, arguments);",
+            "        AttributeExtras.apply(this, arguments);",
+            "    }",
+            "",
+            "    /**",
+            "     * The list of properties which can be configured for",
+            "     * each attribute (e.g. setter, getter, writeOnce, readOnly etc.)",
+            "     *",
+            "     * @property _ATTR_CFG",
+            "     * @type Array",
+            "     * @static",
+            "     * @private",
+            "     */",
+            "    Base._ATTR_CFG = BaseCore._ATTR_CFG.concat(BaseObservable._ATTR_CFG);",
+            "",
+            "    /**",
+            "     * The array of non-attribute configuration properties supported by this class.",
+            "     *",
+            "     * `Base` supports \"on\", \"after\", \"plugins\" and \"bubbleTargets\" properties,",
+            "     * which are not set up as attributes.",
+            "     *",
+            "     * This property is primarily required so that when",
+            "     * <a href=\"#property__allowAdHocAttrs\">`_allowAdHocAttrs`</a> is enabled by",
+            "     * a class, non-attribute configurations don't get added as ad-hoc attributes.",
+            "     *",
+            "     * @property _NON_ATTRS_CFG",
+            "     * @type Array",
+            "     * @static",
+            "     * @private",
+            "     */",
+            "    Base._NON_ATTRS_CFG = BaseCore._NON_ATTRS_CFG.concat(BaseObservable._NON_ATTRS_CFG);",
+            "",
+            "    /**",
+            "     * <p>",
+            "     * The string to be used to identify instances of",
+            "     * this class, for example in prefixing events.",
+            "     * </p>",
+            "     * <p>",
+            "     * Classes extending Base, should define their own",
+            "     * static NAME property, which should be camelCase by",
+            "     * convention (e.g. MyClass.NAME = \"myClass\";).",
+            "     * </p>",
+            "     * @property NAME",
+            "     * @type String",
+            "     * @static",
+            "     */",
+            "    Base.NAME = 'base';",
+            "",
+            "    /**",
+            "     * The default set of attributes which will be available for instances of this class, and",
+            "     * their configuration. In addition to the configuration properties listed by",
+            "     * Attribute's <a href=\"Attribute.html#method_addAttr\">addAttr</a> method, the attribute",
+            "     * can also be configured with a \"cloneDefaultValue\" property, which defines how the statically",
+            "     * defined value field should be protected (\"shallow\", \"deep\" and false are supported values).",
+            "     *",
+            "     * By default if the value is an object literal or an array it will be \"shallow\" cloned, to",
+            "     * protect the default value.",
+            "     *",
+            "     * @property ATTRS",
+            "     * @type Object",
+            "     * @static",
+            "     */",
+            "    Base.ATTRS = AttributeCore.protectAttrs(BaseCore.ATTRS);",
+            "",
+            "    /**",
+            "    Provides a way to safely modify a `Y.Base` subclass' static `ATTRS` after",
+            "    the class has been defined or created.",
+            "",
+            "    Base-based classes cache information about the class hierarchy in order to",
+            "    efficiently create instances. This cache includes includes the aggregated",
+            "    `ATTRS` configs. If the static `ATTRS` configs need to be modified after the",
+            "    class has been defined or create, then use this method which will make sure",
+            "    to clear any cached data before making any modifications.",
+            "",
+            "    @method modifyAttrs",
+            "    @param {Function} [ctor] The constructor function whose `ATTRS` should be",
+            "        modified. If a `ctor` function is not specified, then `this` is assumed",
+            "        to be the constructor which hosts the `ATTRS`.",
+            "    @param {Object} configs The collection of `ATTRS` configs to mix with the",
+            "        existing attribute configurations.",
+            "    @static",
+            "    @since 3.10.0",
+            "    **/",
+            "    Base.modifyAttrs = BaseCore.modifyAttrs;",
+            "",
+            "    Y.mix(Base, BaseCore, false, null, 1);",
+            "    Y.mix(Base, AttributeExtras, false, null, 1);",
+            "",
+            "    // Needs to be `true`, to overwrite methods from `BaseCore`.",
+            "    Y.mix(Base, BaseObservable, true, null, 1);",
+            "",
+            "    // Fix constructor",
+            "    Base.prototype.constructor = Base;",
+            "",
+            "    Y.Base = Base;",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"attribute-base\", \"base-core\", \"base-observable\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "19": 1,
+            "85": 1,
+            "86": 44,
+            "87": 44,
+            "88": 44,
+            "100": 1,
+            "117": 1,
+            "133": 1,
+            "149": 1,
+            "170": 1,
+            "172": 1,
+            "173": 1,
+            "176": 1,
+            "179": 1,
+            "181": 1
+        }
+    },
+    "build/base-pluginhost/base-pluginhost.js": {
+        "path": "build/base-pluginhost/base-pluginhost.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1
+        },
+        "b": {},
+        "f": {
+            "1": 1
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 27
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 46
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 36,
+                    "column": 59
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 12,
+                    "column": 4
+                },
+                "end": {
+                    "line": 13,
+                    "column": 35
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 15,
+                    "column": 4
+                },
+                "end": {
+                    "line": 15,
+                    "column": 44
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 24,
+                    "column": 4
+                },
+                "end": {
+                    "line": 24,
+                    "column": 32
+                }
+            },
+            "5": {
+                "start": {
+                    "line": 33,
+                    "column": 4
+                },
+                "end": {
+                    "line": 33,
+                    "column": 36
+                }
+            }
+        },
+        "branchMap": {},
+        "code": [
+            "(function () { YUI.add('base-pluginhost', function (Y, NAME) {",
+            "",
+            "    /**",
+            "     * The base-pluginhost submodule adds Plugin support to Base, by augmenting Base with",
+            "     * Plugin.Host and setting up static (class level) Base.plug and Base.unplug methods.",
+            "     *",
+            "     * @module base",
+            "     * @submodule base-pluginhost",
+            "     * @for Base",
+            "     */",
+            "",
+            "    var Base = Y.Base,",
+            "        PluginHost = Y.Plugin.Host;",
+            "",
+            "    Y.mix(Base, PluginHost, false, null, 1);",
+            "",
+            "    /**",
+            "     * Alias for <a href=\"Plugin.Host.html#method_Plugin.Host.plug\">Plugin.Host.plug</a>. See aliased",
+            "     * method for argument and return value details.",
+            "     *",
+            "     * @method plug",
+            "     * @static",
+            "     */",
+            "    Base.plug = PluginHost.plug;",
+            "",
+            "    /**",
+            "     * Alias for <a href=\"Plugin.Host.html#method_Plugin.Host.unplug\">Plugin.Host.unplug</a>. See the",
+            "     * aliased method for argument and return value details.",
+            "     *",
+            "     * @method unplug",
+            "     * @static",
+            "     */",
+            "    Base.unplug = PluginHost.unplug;",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"base-base\", \"pluginhost\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "12": 1,
+            "15": 1,
+            "24": 1,
+            "33": 1
+        }
+    },
+    "build/base-build/base-build.js": {
+        "path": "build/base-build/base-build.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 43,
+            "5": 6,
+            "6": 1,
+            "7": 41,
+            "8": 2,
+            "9": 2,
+            "10": 1,
+            "11": 41,
+            "12": 1,
+            "13": 32,
+            "14": 32,
+            "15": 36,
+            "16": 36,
+            "17": 36,
+            "18": 36,
+            "19": 36,
+            "20": 36,
+            "21": 36,
+            "22": 36,
+            "23": 36,
+            "24": 8,
+            "25": 36,
+            "26": 1,
+            "27": 36,
+            "28": 32,
+            "29": 16,
+            "30": 32,
+            "31": 8,
+            "32": 8,
+            "33": 32,
+            "34": 32,
+            "35": 29,
+            "36": 29,
+            "37": 29,
+            "38": 32,
+            "39": 1,
+            "40": 1,
+            "41": 44,
+            "42": 44,
+            "43": 44,
+            "44": 44,
+            "45": 44,
+            "46": 44,
+            "47": 44,
+            "48": 44,
+            "49": 44,
+            "50": 91,
+            "51": 91,
+            "52": 5,
+            "53": 91,
+            "54": 44,
+            "55": 44,
+            "56": 129,
+            "57": 129,
+            "58": 29,
+            "59": 38,
+            "60": 29,
+            "61": 29,
+            "62": 4,
+            "63": 4,
+            "64": 5,
+            "65": 5,
+            "66": 4,
+            "67": 4,
+            "68": 4,
+            "69": 5,
+            "70": 3,
+            "71": 1,
+            "72": 32,
+            "73": 32,
+            "74": 31,
+            "75": 32,
+            "76": 32,
+            "77": 32,
+            "78": 32,
+            "79": 32,
+            "80": 32,
+            "81": 41,
+            "82": 41,
+            "83": 36,
+            "84": 33,
+            "85": 36,
+            "86": 33,
+            "87": 36,
+            "88": 1,
+            "89": 41,
+            "90": 32,
+            "91": 32,
+            "92": 36,
+            "93": 36,
+            "94": 36,
+            "95": 5,
+            "96": 2,
+            "97": 5,
+            "98": 2,
+            "99": 5,
+            "100": 1,
+            "101": 32,
+            "102": 1,
+            "103": 32,
+            "104": 1,
+            "105": 32,
+            "106": 1,
+            "107": 32,
+            "108": 8,
+            "109": 8,
+            "110": 24,
+            "111": 7,
+            "112": 8,
+            "113": 16,
+            "114": 16,
+            "115": 0,
+            "116": 8,
+            "117": 1,
+            "118": 1,
+            "119": 1,
+            "120": 28,
+            "121": 1,
+            "122": 3,
+            "123": 1,
+            "124": 3,
+            "125": 1,
+            "126": 1
+        },
+        "b": {
+            "1": [
+                6,
+                37
+            ],
+            "2": [
+                6,
+                5
+            ],
+            "3": [
+                2,
+                39
+            ],
+            "4": [
+                8,
+                28
+            ],
+            "5": [
+                1,
+                35
+            ],
+            "6": [
+                16,
+                16
+            ],
+            "7": [
+                8,
+                24
+            ],
+            "8": [
+                29,
+                3
+            ],
+            "9": [
+                44,
+                0
+            ],
+            "10": [
+                44,
+                0
+            ],
+            "11": [
+                44,
+                0
+            ],
+            "12": [
+                5,
+                86
+            ],
+            "13": [
+                91,
+                87
+            ],
+            "14": [
+                0,
+                5
+            ],
+            "15": [
+                44,
+                0
+            ],
+            "16": [
+                129,
+                0
+            ],
+            "17": [
+                4,
+                1
+            ],
+            "18": [
+                3,
+                2
+            ],
+            "19": [
+                3,
+                29
+            ],
+            "20": [
+                32,
+                4
+            ],
+            "21": [
+                29,
+                3
+            ],
+            "22": [
+                31,
+                1
+            ],
+            "23": [
+                32,
+                32
+            ],
+            "24": [
+                32,
+                31
+            ],
+            "25": [
+                32,
+                4
+            ],
+            "26": [
+                32,
+                4
+            ],
+            "27": [
+                32,
+                4
+            ],
+            "28": [
+                73,
+                41
+            ],
+            "29": [
+                36,
+                5
+            ],
+            "30": [
+                33,
+                3
+            ],
+            "31": [
+                33,
+                3
+            ],
+            "32": [
+                1,
+                35
+            ],
+            "33": [
+                9,
+                32
+            ],
+            "34": [
+                32,
+                0
+            ],
+            "35": [
+                5,
+                31
+            ],
+            "36": [
+                2,
+                3
+            ],
+            "37": [
+                2,
+                3
+            ],
+            "38": [
+                1,
+                4
+            ],
+            "39": [
+                1,
+                31
+            ],
+            "40": [
+                1,
+                31
+            ],
+            "41": [
+                1,
+                31
+            ],
+            "42": [
+                7,
+                17
+            ],
+            "43": [
+                0,
+                16
+            ],
+            "44": [
+                1,
+                2
+            ]
+        },
+        "f": {
+            "1": 1,
+            "2": 43,
+            "3": 41,
+            "4": 41,
+            "5": 32,
+            "6": 44,
+            "7": 29,
+            "8": 38,
+            "9": 4,
+            "10": 32,
+            "11": 32,
+            "12": 8,
+            "13": 1,
+            "14": 28,
+            "15": 3
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 22
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 41
+                    }
+                }
+            },
+            "2": {
+                "name": "arrayAggregator",
+                "line": 24,
+                "loc": {
+                    "start": {
+                        "line": 24,
+                        "column": 4
+                    },
+                    "end": {
+                        "line": 24,
+                        "column": 41
+                    }
+                }
+            },
+            "3": {
+                "name": "attrCfgAggregator",
+                "line": 33,
+                "loc": {
+                    "start": {
+                        "line": 33,
+                        "column": 4
+                    },
+                    "end": {
+                        "line": 33,
+                        "column": 43
+                    }
+                }
+            },
+            "4": {
+                "name": "attrsAggregator",
+                "line": 44,
+                "loc": {
+                    "start": {
+                        "line": 44,
+                        "column": 4
+                    },
+                    "end": {
+                        "line": 44,
+                        "column": 41
+                    }
+                }
+            },
+            "5": {
+                "name": "(anonymous_5)",
+                "line": 48,
+                "loc": {
+                    "start": {
+                        "line": 48,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 48,
+                        "column": 64
+                    }
+                }
+            },
+            "6": {
+                "name": "(anonymous_6)",
+                "line": 117,
+                "loc": {
+                    "start": {
+                        "line": 117,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 117,
+                        "column": 38
+                    }
+                }
+            },
+            "7": {
+                "name": "(anonymous_7)",
+                "line": 156,
+                "loc": {
+                    "start": {
+                        "line": 156,
+                        "column": 15
+                    },
+                    "end": {
+                        "line": 156,
+                        "column": 30
+                    }
+                }
+            },
+            "8": {
+                "name": "BuiltClass",
+                "line": 158,
+                "loc": {
+                    "start": {
+                        "line": 158,
+                        "column": 12
+                    },
+                    "end": {
+                        "line": 158,
+                        "column": 34
+                    }
+                }
+            },
+            "9": {
+                "name": "(anonymous_9)",
+                "line": 166,
+                "loc": {
+                    "start": {
+                        "line": 166,
+                        "column": 16
+                    },
+                    "end": {
+                        "line": 166,
+                        "column": 35
+                    }
+                }
+            },
+            "10": {
+                "name": "(anonymous_10)",
+                "line": 184,
+                "loc": {
+                    "start": {
+                        "line": 184,
+                        "column": 16
+                    },
+                    "end": {
+                        "line": 184,
+                        "column": 36
+                    }
+                }
+            },
+            "11": {
+                "name": "(anonymous_11)",
+                "line": 201,
+                "loc": {
+                    "start": {
+                        "line": 201,
+                        "column": 15
+                    },
+                    "end": {
+                        "line": 201,
+                        "column": 41
+                    }
+                }
+            },
+            "12": {
+                "name": "(anonymous_12)",
+                "line": 268,
+                "loc": {
+                    "start": {
+                        "line": 268,
+                        "column": 17
+                    },
+                    "end": {
+                        "line": 268,
+                        "column": 35
+                    }
+                }
+            },
+            "13": {
+                "name": "(anonymous_13)",
+                "line": 327,
+                "loc": {
+                    "start": {
+                        "line": 327,
+                        "column": 17
+                    },
+                    "end": {
+                        "line": 327,
+                        "column": 55
+                    }
+                }
+            },
+            "14": {
+                "name": "(anonymous_14)",
+                "line": 396,
+                "loc": {
+                    "start": {
+                        "line": 396,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 396,
+                        "column": 59
+                    }
+                }
+            },
+            "15": {
+                "name": "(anonymous_15)",
+                "line": 409,
+                "loc": {
+                    "start": {
+                        "line": 409,
+                        "column": 15
+                    },
+                    "end": {
+                        "line": 409,
+                        "column": 42
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 453,
+                    "column": 45
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 12,
+                    "column": 4
+                },
+                "end": {
+                    "line": 20,
+                    "column": 14
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 24,
+                    "column": 4
+                },
+                "end": {
+                    "line": 28,
+                    "column": 5
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 25,
+                    "column": 8
+                },
+                "end": {
+                    "line": 27,
+                    "column": 9
+                }
+            },
+            "5": {
+                "start": {
+                    "line": 26,
+                    "column": 12
+                },
+                "end": {
+                    "line": 26,
+                    "column": 54
+                }
+            },
+            "6": {
+                "start": {
+                    "line": 33,
+                    "column": 4
+                },
+                "end": {
+                    "line": 40,
+                    "column": 5
+                }
+            },
+            "7": {
+                "start": {
+                    "line": 34,
+                    "column": 8
+                },
+                "end": {
+                    "line": 39,
+                    "column": 9
+                }
+            },
+            "8": {
+                "start": {
+                    "line": 36,
+                    "column": 12
+                },
+                "end": {
+                    "line": 36,
+                    "column": 36
+                }
+            },
+            "9": {
+                "start": {
+                    "line": 38,
+                    "column": 12
+                },
+                "end": {
+                    "line": 38,
+                    "column": 51
+                }
+            },
+            "10": {
+                "start": {
+                    "line": 44,
+                    "column": 4
+                },
+                "end": {
+                    "line": 46,
+                    "column": 5
+                }
+            },
+            "11": {
+                "start": {
+                    "line": 45,
+                    "column": 8
+                },
+                "end": {
+                    "line": 45,
+                    "column": 41
+                }
+            },
+            "12": {
+                "start": {
+                    "line": 48,
+                    "column": 4
+                },
+                "end": {
+                    "line": 111,
+                    "column": 6
+                }
+            },
+            "13": {
+                "start": {
+                    "line": 50,
+                    "column": 8
+                },
+                "end": {
+                    "line": 61,
+                    "column": 23
+                }
+            },
+            "14": {
+                "start": {
+                    "line": 64,
+                    "column": 8
+                },
+                "end": {
+                    "line": 89,
+                    "column": 9
+                }
+            },
+            "15": {
+                "start": {
+                    "line": 65,
+                    "column": 12
+                },
+                "end": {
+                    "line": 65,
+                    "column": 37
+                }
+            },
+            "16": {
+                "start": {
+                    "line": 67,
+                    "column": 12
+                },
+                "end": {
+                    "line": 67,
+                    "column": 42
+                }
+            },
+            "17": {
+                "start": {
+                    "line": 69,
+                    "column": 12
+                },
+                "end": {
+                    "line": 69,
+                    "column": 48
+                }
+            },
+            "18": {
+                "start": {
+                    "line": 70,
+                    "column": 12
+                },
+                "end": {
+                    "line": 70,
+                    "column": 46
+                }
+            },
+            "19": {
+                "start": {
+                    "line": 71,
+                    "column": 12
+                },
+                "end": {
+                    "line": 71,
+                    "column": 41
+                }
+            },
+            "20": {
+                "start": {
+                    "line": 72,
+                    "column": 12
+                },
+                "end": {
+                    "line": 72,
+                    "column": 40
+                }
+            },
+            "21": {
+                "start": {
+                    "line": 75,
+                    "column": 12
+                },
+                "end": {
+                    "line": 75,
+                    "column": 55
+                }
+            },
+            "22": {
+                "start": {
+                    "line": 78,
+                    "column": 12
+                },
+                "end": {
+                    "line": 78,
+                    "column": 53
+                }
+            },
+            "23": {
+                "start": {
+                    "line": 80,
+                    "column": 12
+                },
+                "end": {
+                    "line": 82,
+                    "column": 13
+                }
+            },
+            "24": {
+                "start": {
+                    "line": 81,
+                    "column": 16
+                },
+                "end": {
+                    "line": 81,
+                    "column": 52
+                }
+            },
+            "25": {
+                "start": {
+                    "line": 84,
+                    "column": 12
+                },
+                "end": {
+                    "line": 86,
+                    "column": 13
+                }
+            },
+            "26": {
+                "start": {
+                    "line": 85,
+                    "column": 16
+                },
+                "end": {
+                    "line": 85,
+                    "column": 50
+                }
+            },
+            "27": {
+                "start": {
+                    "line": 88,
+                    "column": 12
+                },
+                "end": {
+                    "line": 88,
+                    "column": 53
+                }
+            },
+            "28": {
+                "start": {
+                    "line": 91,
+                    "column": 8
+                },
+                "end": {
+                    "line": 93,
+                    "column": 9
+                }
+            },
+            "29": {
+                "start": {
+                    "line": 92,
+                    "column": 12
+                },
+                "end": {
+                    "line": 92,
+                    "column": 50
+                }
+            },
+            "30": {
+                "start": {
+                    "line": 95,
+                    "column": 8
+                },
+                "end": {
+                    "line": 98,
+                    "column": 9
+                }
+            },
+            "31": {
+                "start": {
+                    "line": 96,
+                    "column": 12
+                },
+                "end": {
+                    "line": 96,
+                    "column": 64
+                }
+            },
+            "32": {
+                "start": {
+                    "line": 97,
+                    "column": 12
+                },
+                "end": {
+                    "line": 97,
+                    "column": 47
+                }
+            },
+            "33": {
+                "start": {
+                    "line": 100,
+                    "column": 8
+                },
+                "end": {
+                    "line": 100,
+                    "column": 51
+                }
+            },
+            "34": {
+                "start": {
+                    "line": 102,
+                    "column": 8
+                },
+                "end": {
+                    "line": 108,
+                    "column": 9
+                }
+            },
+            "35": {
+                "start": {
+                    "line": 103,
+                    "column": 12
+                },
+                "end": {
+                    "line": 103,
+                    "column": 35
+                }
+            },
+            "36": {
+                "start": {
+                    "line": 104,
+                    "column": 12
+                },
+                "end": {
+                    "line": 104,
+                    "column": 58
+                }
+            },
+            "37": {
+                "start": {
+                    "line": 107,
+                    "column": 12
+                },
+                "end": {
+                    "line": 107,
+                    "column": 54
+                }
+            },
+            "38": {
+                "start": {
+                    "line": 110,
+                    "column": 8
+                },
+                "end": {
+                    "line": 110,
+                    "column": 26
+                }
+            },
+            "39": {
+                "start": {
+                    "line": 113,
+                    "column": 4
+                },
+                "end": {
+                    "line": 113,
+                    "column": 24
+                }
+            },
+            "40": {
+                "start": {
+                    "line": 115,
+                    "column": 4
+                },
+                "end": {
+                    "line": 288,
+                    "column": 7
+                }
+            },
+            "41": {
+                "start": {
+                    "line": 119,
+                    "column": 12
+                },
+                "end": {
+                    "line": 124,
+                    "column": 18
+                }
+            },
+            "42": {
+                "start": {
+                    "line": 126,
+                    "column": 12
+                },
+                "end": {
+                    "line": 130,
+                    "column": 13
+                }
+            },
+            "43": {
+                "start": {
+                    "line": 127,
+                    "column": 16
+                },
+                "end": {
+                    "line": 127,
+                    "column": 44
+                }
+            },
+            "44": {
+                "start": {
+                    "line": 128,
+                    "column": 16
+                },
+                "end": {
+                    "line": 128,
+                    "column": 36
+                }
+            },
+            "45": {
+                "start": {
+                    "line": 129,
+                    "column": 16
+                },
+                "end": {
+                    "line": 129,
+                    "column": 38
+                }
+            },
+            "46": {
+                "start": {
+                    "line": 132,
+                    "column": 12
+                },
+                "end": {
+                    "line": 134,
+                    "column": 13
+                }
+            },
+            "47": {
+                "start": {
+                    "line": 133,
+                    "column": 16
+                },
+                "end": {
+                    "line": 133,
+                    "column": 43
+                }
+            },
+            "48": {
+                "start": {
+                    "line": 136,
+                    "column": 12
+                },
+                "end": {
+                    "line": 144,
+                    "column": 13
+                }
+            },
+            "49": {
+                "start": {
+                    "line": 137,
+                    "column": 16
+                },
+                "end": {
+                    "line": 143,
+                    "column": 17
+                }
+            },
+            "50": {
+                "start": {
+                    "line": 138,
+                    "column": 20
+                },
+                "end": {
+                    "line": 138,
+                    "column": 41
+                }
+            },
+            "51": {
+                "start": {
+                    "line": 139,
+                    "column": 20
+                },
+                "end": {
+                    "line": 141,
+                    "column": 21
+                }
+            },
+            "52": {
+                "start": {
+                    "line": 140,
+                    "column": 24
+                },
+                "end": {
+                    "line": 140,
+                    "column": 63
+                }
+            },
+            "53": {
+                "start": {
+                    "line": 142,
+                    "column": 20
+                },
+                "end": {
+                    "line": 142,
+                    "column": 52
+                }
+            },
+            "54": {
+                "start": {
+                    "line": 146,
+                    "column": 12
+                },
+                "end": {
+                    "line": 152,
+                    "column": 13
+                }
+            },
+            "55": {
+                "start": {
+                    "line": 147,
+                    "column": 16
+                },
+                "end": {
+                    "line": 151,
+                    "column": 17
+                }
+            },
+            "56": {
+                "start": {
+                    "line": 148,
+                    "column": 20
+                },
+                "end": {
+                    "line": 150,
+                    "column": 21
+                }
+            },
+            "57": {
+                "start": {
+                    "line": 149,
+                    "column": 24
+                },
+                "end": {
+                    "line": 149,
+                    "column": 43
+                }
+            },
+            "58": {
+                "start": {
+                    "line": 158,
+                    "column": 12
+                },
+                "end": {
+                    "line": 160,
+                    "column": 13
+                }
+            },
+            "59": {
+                "start": {
+                    "line": 159,
+                    "column": 16
+                },
+                "end": {
+                    "line": 159,
+                    "column": 73
+                }
+            },
+            "60": {
+                "start": {
+                    "line": 161,
+                    "column": 12
+                },
+                "end": {
+                    "line": 161,
+                    "column": 39
+                }
+            },
+            "61": {
+                "start": {
+                    "line": 163,
+                    "column": 12
+                },
+                "end": {
+                    "line": 163,
+                    "column": 30
+                }
+            },
+            "62": {
+                "start": {
+                    "line": 167,
+                    "column": 12
+                },
+                "end": {
+                    "line": 167,
+                    "column": 69
+                }
+            },
+            "63": {
+                "start": {
+                    "line": 168,
+                    "column": 12
+                },
+                "end": {
+                    "line": 180,
+                    "column": 13
+                }
+            },
+            "64": {
+                "start": {
+                    "line": 169,
+                    "column": 16
+                },
+                "end": {
+                    "line": 169,
+                    "column": 33
+                }
+            },
+            "65": {
+                "start": {
+                    "line": 170,
+                    "column": 16
+                },
+                "end": {
+                    "line": 179,
+                    "column": 17
+                }
+            },
+            "66": {
+                "start": {
+                    "line": 171,
+                    "column": 20
+                },
+                "end": {
+                    "line": 171,
+                    "column": 46
+                }
+            },
+            "67": {
+                "start": {
+                    "line": 172,
+                    "column": 20
+                },
+                "end": {
+                    "line": 172,
+                    "column": 37
+                }
+            },
+            "68": {
+                "start": {
+                    "line": 174,
+                    "column": 20
+                },
+                "end": {
+                    "line": 178,
+                    "column": 21
+                }
+            },
+            "69": {
+                "start": {
+                    "line": 175,
+                    "column": 24
+                },
+                "end": {
+                    "line": 177,
+                    "column": 25
+                }
+            },
+            "70": {
+                "start": {
+                    "line": 176,
+                    "column": 28
+                },
+                "end": {
+                    "line": 176,
+                    "column": 40
+                }
+            },
+            "71": {
+                "start": {
+                    "line": 181,
+                    "column": 12
+                },
+                "end": {
+                    "line": 181,
+                    "column": 25
+                }
+            },
+            "72": {
+                "start": {
+                    "line": 186,
+                    "column": 11
+                },
+                "end": {
+                    "line": 188,
+                    "column": 47
+                }
+            },
+            "73": {
+                "start": {
+                    "line": 190,
+                    "column": 12
+                },
+                "end": {
+                    "line": 192,
+                    "column": 13
+                }
+            },
+            "74": {
+                "start": {
+                    "line": 191,
+                    "column": 16
+                },
+                "end": {
+                    "line": 191,
+                    "column": 53
+                }
+            },
+            "75": {
+                "start": {
+                    "line": 194,
+                    "column": 12
+                },
+                "end": {
+                    "line": 194,
+                    "column": 46
+                }
+            },
+            "76": {
+                "start": {
+                    "line": 195,
+                    "column": 12
+                },
+                "end": {
+                    "line": 195,
+                    "column": 48
+                }
+            },
+            "77": {
+                "start": {
+                    "line": 196,
+                    "column": 12
+                },
+                "end": {
+                    "line": 196,
+                    "column": 39
+                }
+            },
+            "78": {
+                "start": {
+                    "line": 198,
+                    "column": 12
+                },
+                "end": {
+                    "line": 198,
+                    "column": 30
+                }
+            },
+            "79": {
+                "start": {
+                    "line": 202,
+                    "column": 12
+                },
+                "end": {
+                    "line": 211,
+                    "column": 18
+                }
+            },
+            "80": {
+                "start": {
+                    "line": 214,
+                    "column": 12
+                },
+                "end": {
+                    "line": 228,
+                    "column": 13
+                }
+            },
+            "81": {
+                "start": {
+                    "line": 215,
+                    "column": 16
+                },
+                "end": {
+                    "line": 215,
+                    "column": 39
+                }
+            },
+            "82": {
+                "start": {
+                    "line": 216,
+                    "column": 16
+                },
+                "end": {
+                    "line": 226,
+                    "column": 17
+                }
+            },
+            "83": {
+                "start": {
+                    "line": 217,
+                    "column": 20
+                },
+                "end": {
+                    "line": 219,
+                    "column": 21
+                }
+            },
+            "84": {
+                "start": {
+                    "line": 218,
+                    "column": 24
+                },
+                "end": {
+                    "line": 218,
+                    "column": 64
+                }
+            },
+            "85": {
+                "start": {
+                    "line": 220,
+                    "column": 20
+                },
+                "end": {
+                    "line": 222,
+                    "column": 21
+                }
+            },
+            "86": {
+                "start": {
+                    "line": 221,
+                    "column": 24
+                },
+                "end": {
+                    "line": 221,
+                    "column": 59
+                }
+            },
+            "87": {
+                "start": {
+                    "line": 223,
+                    "column": 20
+                },
+                "end": {
+                    "line": 225,
+                    "column": 21
+                }
+            },
+            "88": {
+                "start": {
+                    "line": 224,
+                    "column": 24
+                },
+                "end": {
+                    "line": 224,
+                    "column": 67
+                }
+            },
+            "89": {
+                "start": {
+                    "line": 227,
+                    "column": 16
+                },
+                "end": {
+                    "line": 227,
+                    "column": 67
+                }
+            },
+            "90": {
+                "start": {
+                    "line": 231,
+                    "column": 12
+                },
+                "end": {
+                    "line": 247,
+                    "column": 13
+                }
+            },
+            "91": {
+                "start": {
+                    "line": 232,
+                    "column": 16
+                },
+                "end": {
+                    "line": 246,
+                    "column": 17
+                }
+            },
+            "92": {
+                "start": {
+                    "line": 233,
+                    "column": 20
+                },
+                "end": {
+                    "line": 233,
+                    "column": 32
+                }
+            },
+            "93": {
+                "start": {
+                    "line": 234,
+                    "column": 20
+                },
+                "end": {
+                    "line": 234,
+                    "column": 43
+                }
+            },
+            "94": {
+                "start": {
+                    "line": 235,
+                    "column": 20
+                },
+                "end": {
+                    "line": 245,
+                    "column": 21
+                }
+            },
+            "95": {
+                "start": {
+                    "line": 236,
+                    "column": 24
+                },
+                "end": {
+                    "line": 238,
+                    "column": 25
+                }
+            },
+            "96": {
+                "start": {
+                    "line": 237,
+                    "column": 28
+                },
+                "end": {
+                    "line": 237,
+                    "column": 68
+                }
+            },
+            "97": {
+                "start": {
+                    "line": 239,
+                    "column": 24
+                },
+                "end": {
+                    "line": 241,
+                    "column": 25
+                }
+            },
+            "98": {
+                "start": {
+                    "line": 240,
+                    "column": 28
+                },
+                "end": {
+                    "line": 240,
+                    "column": 63
+                }
+            },
+            "99": {
+                "start": {
+                    "line": 242,
+                    "column": 24
+                },
+                "end": {
+                    "line": 244,
+                    "column": 25
+                }
+            },
+            "100": {
+                "start": {
+                    "line": 243,
+                    "column": 28
+                },
+                "end": {
+                    "line": 243,
+                    "column": 71
+                }
+            },
+            "101": {
+                "start": {
+                    "line": 249,
+                    "column": 12
+                },
+                "end": {
+                    "line": 251,
+                    "column": 13
+                }
+            },
+            "102": {
+                "start": {
+                    "line": 250,
+                    "column": 16
+                },
+                "end": {
+                    "line": 250,
+                    "column": 44
+                }
+            },
+            "103": {
+                "start": {
+                    "line": 253,
+                    "column": 12
+                },
+                "end": {
+                    "line": 255,
+                    "column": 13
+                }
+            },
+            "104": {
+                "start": {
+                    "line": 254,
+                    "column": 16
+                },
+                "end": {
+                    "line": 254,
+                    "column": 48
+                }
+            },
+            "105": {
+                "start": {
+                    "line": 257,
+                    "column": 12
+                },
+                "end": {
+                    "line": 259,
+                    "column": 13
+                }
+            },
+            "106": {
+                "start": {
+                    "line": 258,
+                    "column": 16
+                },
+                "end": {
+                    "line": 258,
+                    "column": 53
+                }
+            },
+            "107": {
+                "start": {
+                    "line": 261,
+                    "column": 12
+                },
+                "end": {
+                    "line": 265,
+                    "column": 14
+                }
+            },
+            "108": {
+                "start": {
+                    "line": 269,
+                    "column": 12
+                },
+                "end": {
+                    "line": 271,
+                    "column": 36
+                }
+            },
+            "109": {
+                "start": {
+                    "line": 273,
+                    "column": 12
+                },
+                "end": {
+                    "line": 277,
+                    "column": 13
+                }
+            },
+            "110": {
+                "start": {
+                    "line": 274,
+                    "column": 16
+                },
+                "end": {
+                    "line": 276,
+                    "column": 17
+                }
+            },
+            "111": {
+                "start": {
+                    "line": 275,
+                    "column": 20
+                },
+                "end": {
+                    "line": 275,
+                    "column": 41
+                }
+            },
+            "112": {
+                "start": {
+                    "line": 279,
+                    "column": 12
+                },
+                "end": {
+                    "line": 284,
+                    "column": 13
+                }
+            },
+            "113": {
+                "start": {
+                    "line": 280,
+                    "column": 16
+                },
+                "end": {
+                    "line": 280,
+                    "column": 37
+                }
+            },
+            "114": {
+                "start": {
+                    "line": 281,
+                    "column": 16
+                },
+                "end": {
+                    "line": 283,
+                    "column": 17
+                }
+            },
+            "115": {
+                "start": {
+                    "line": 282,
+                    "column": 20
+                },
+                "end": {
+                    "line": 282,
+                    "column": 41
+                }
+            },
+            "116": {
+                "start": {
+                    "line": 286,
+                    "column": 12
+                },
+                "end": {
+                    "line": 286,
+                    "column": 27
+                }
+            },
+            "117": {
+                "start": {
+                    "line": 327,
+                    "column": 4
+                },
+                "end": {
+                    "line": 329,
+                    "column": 6
+                }
+            },
+            "118": {
+                "start": {
+                    "line": 328,
+                    "column": 8
+                },
+                "end": {
+                    "line": 328,
+                    "column": 62
+                }
+            },
+            "119": {
+                "start": {
+                    "line": 396,
+                    "column": 4
+                },
+                "end": {
+                    "line": 398,
+                    "column": 6
+                }
+            },
+            "120": {
+                "start": {
+                    "line": 397,
+                    "column": 8
+                },
+                "end": {
+                    "line": 397,
+                    "column": 53
+                }
+            },
+            "121": {
+                "start": {
+                    "line": 409,
+                    "column": 4
+                },
+                "end": {
+                    "line": 416,
+                    "column": 6
+                }
+            },
+            "122": {
+                "start": {
+                    "line": 411,
+                    "column": 8
+                },
+                "end": {
+                    "line": 413,
+                    "column": 9
+                }
+            },
+            "123": {
+                "start": {
+                    "line": 412,
+                    "column": 12
+                },
+                "end": {
+                    "line": 412,
+                    "column": 43
+                }
+            },
+            "124": {
+                "start": {
+                    "line": 415,
+                    "column": 8
+                },
+                "end": {
+                    "line": 415,
+                    "column": 74
+                }
+            },
+            "125": {
+                "start": {
+                    "line": 431,
+                    "column": 4
+                },
+                "end": {
+                    "line": 439,
+                    "column": 6
+                }
+            },
+            "126": {
+                "start": {
+                    "line": 442,
+                    "column": 4
+                },
+                "end": {
+                    "line": 450,
+                    "column": 6
+                }
+            }
+        },
+        "branchMap": {
+            "1": {
+                "line": 25,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 25,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 25,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 25,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 25,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "2": {
+                "line": 26,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 26,
+                            "column": 23
+                        },
+                        "end": {
+                            "line": 26,
+                            "column": 30
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 26,
+                            "column": 34
+                        },
+                        "end": {
+                            "line": 26,
+                            "column": 36
+                        }
+                    }
+                ]
+            },
+            "3": {
+                "line": 34,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 34,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 34,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 34,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 34,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "line": 80,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 80,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 80,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 80,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 80,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "line": 84,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 84,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 84,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 84,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 84,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "6": {
+                "line": 91,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 91,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 91,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 91,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 91,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "7": {
+                "line": 95,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 95,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 95,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 95,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 95,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "8": {
+                "line": 102,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 102,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 102,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 102,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 102,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "9": {
+                "line": 126,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 126,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 126,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 126,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 126,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "10": {
+                "line": 132,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 132,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 132,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 132,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 132,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "11": {
+                "line": 136,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 136,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 136,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 136,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 136,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "12": {
+                "line": 139,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 139,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 139,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 139,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 139,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "13": {
+                "line": 139,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 139,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 139,
+                            "column": 47
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 139,
+                            "column": 51
+                        },
+                        "end": {
+                            "line": 139,
+                            "column": 73
+                        }
+                    }
+                ]
+            },
+            "14": {
+                "line": 140,
+                "type": "cond-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 140,
+                            "column": 55
+                        },
+                        "end": {
+                            "line": 140,
+                            "column": 57
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 140,
+                            "column": 60
+                        },
+                        "end": {
+                            "line": 140,
+                            "column": 62
+                        }
+                    }
+                ]
+            },
+            "15": {
+                "line": 146,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 146,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 146,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 146,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 146,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "16": {
+                "line": 148,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 148,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 148,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 148,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 148,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "17": {
+                "line": 170,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 170,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 170,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 170,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 170,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "18": {
+                "line": 175,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 175,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 175,
+                            "column": 24
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 175,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 175,
+                            "column": 24
+                        }
+                    }
+                ]
+            },
+            "19": {
+                "line": 186,
+                "type": "cond-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 186,
+                            "column": 58
+                        },
+                        "end": {
+                            "line": 186,
+                            "column": 63
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 186,
+                            "column": 66
+                        },
+                        "end": {
+                            "line": 186,
+                            "column": 70
+                        }
+                    }
+                ]
+            },
+            "20": {
+                "line": 186,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 186,
+                            "column": 26
+                        },
+                        "end": {
+                            "line": 186,
+                            "column": 29
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 186,
+                            "column": 33
+                        },
+                        "end": {
+                            "line": 186,
+                            "column": 54
+                        }
+                    }
+                ]
+            },
+            "21": {
+                "line": 187,
+                "type": "cond-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 187,
+                            "column": 40
+                        },
+                        "end": {
+                            "line": 187,
+                            "column": 57
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 187,
+                            "column": 60
+                        },
+                        "end": {
+                            "line": 187,
+                            "column": 64
+                        }
+                    }
+                ]
+            },
+            "22": {
+                "line": 190,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 190,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 190,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 190,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 190,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "23": {
+                "line": 194,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 194,
+                            "column": 26
+                        },
+                        "end": {
+                            "line": 194,
+                            "column": 37
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 194,
+                            "column": 41
+                        },
+                        "end": {
+                            "line": 194,
+                            "column": 45
+                        }
+                    }
+                ]
+            },
+            "24": {
+                "line": 195,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 195,
+                            "column": 28
+                        },
+                        "end": {
+                            "line": 195,
+                            "column": 41
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 195,
+                            "column": 45
+                        },
+                        "end": {
+                            "line": 195,
+                            "column": 47
+                        }
+                    }
+                ]
+            },
+            "25": {
+                "line": 206,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 206,
+                            "column": 27
+                        },
+                        "end": {
+                            "line": 206,
+                            "column": 30
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 206,
+                            "column": 34
+                        },
+                        "end": {
+                            "line": 206,
+                            "column": 48
+                        }
+                    }
+                ]
+            },
+            "26": {
+                "line": 207,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 207,
+                            "column": 32
+                        },
+                        "end": {
+                            "line": 207,
+                            "column": 35
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 207,
+                            "column": 39
+                        },
+                        "end": {
+                            "line": 207,
+                            "column": 49
+                        }
+                    }
+                ]
+            },
+            "27": {
+                "line": 208,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 208,
+                            "column": 30
+                        },
+                        "end": {
+                            "line": 208,
+                            "column": 33
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 208,
+                            "column": 37
+                        },
+                        "end": {
+                            "line": 208,
+                            "column": 48
+                        }
+                    }
+                ]
+            },
+            "28": {
+                "line": 214,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 214,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 214,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 214,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 214,
+                            "column": 35
+                        }
+                    }
+                ]
+            },
+            "29": {
+                "line": 216,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 216,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 216,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 216,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 216,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "30": {
+                "line": 217,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 217,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 217,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 217,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 217,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "31": {
+                "line": 220,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 220,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 220,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 220,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 220,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "32": {
+                "line": 223,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 223,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 223,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 223,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 223,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "33": {
+                "line": 227,
+                "type": "cond-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 227,
+                            "column": 35
+                        },
+                        "end": {
+                            "line": 227,
+                            "column": 59
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 227,
+                            "column": 62
+                        },
+                        "end": {
+                            "line": 227,
+                            "column": 66
+                        }
+                    }
+                ]
+            },
+            "34": {
+                "line": 231,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 231,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 231,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 231,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 231,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "35": {
+                "line": 235,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 235,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 235,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 235,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 235,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "36": {
+                "line": 236,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 236,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 236,
+                            "column": 24
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 236,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 236,
+                            "column": 24
+                        }
+                    }
+                ]
+            },
+            "37": {
+                "line": 239,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 239,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 239,
+                            "column": 24
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 239,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 239,
+                            "column": 24
+                        }
+                    }
+                ]
+            },
+            "38": {
+                "line": 242,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 242,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 242,
+                            "column": 24
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 242,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 242,
+                            "column": 24
+                        }
+                    }
+                ]
+            },
+            "39": {
+                "line": 249,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 249,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 249,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 249,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 249,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "40": {
+                "line": 253,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 253,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 253,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 253,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 253,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "41": {
+                "line": 257,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 257,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 257,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 257,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 257,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "42": {
+                "line": 274,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 274,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 274,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 274,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 274,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "43": {
+                "line": 281,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 281,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 281,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 281,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 281,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "44": {
+                "line": 411,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 411,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 411,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 411,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 411,
+                            "column": 8
+                        }
+                    }
+                ]
+            }
+        },
+        "code": [
+            "(function () { YUI.add('base-build', function (Y, NAME) {",
+            "",
+            "    /**",
+            "     * The base-build submodule provides Base.build functionality, which",
+            "     * can be used to create custom classes, by aggregating extensions onto",
+            "     * a main class.",
+            "     *",
+            "     * @module base",
+            "     * @submodule base-build",
+            "     * @for Base",
+            "     */",
+            "    var BaseCore = Y.BaseCore,",
+            "        Base     = Y.Base,",
+            "        L        = Y.Lang,",
+            "",
+            "        INITIALIZER = \"initializer\",",
+            "        DESTRUCTOR  = \"destructor\",",
+            "        AGGREGATES  = [\"_PLUG\", \"_UNPLUG\"],",
+            "",
+            "        build;",
+            "",
+            "    // Utility function used in `_buildCfg` to aggregate array values into a new",
+            "    // array from the sender constructor to the receiver constructor.",
+            "    function arrayAggregator(prop, r, s) {",
+            "        if (s[prop]) {",
+            "            r[prop] = (r[prop] || []).concat(s[prop]);",
+            "        }",
+            "    }",
+            "",
+            "    // Utility function used in `_buildCfg` to aggregate `_ATTR_CFG` array",
+            "    // values from the sender constructor into a new array on receiver's",
+            "    // constructor, and clear the cached hash.",
+            "    function attrCfgAggregator(prop, r, s) {",
+            "        if (s._ATTR_CFG) {",
+            "            // Clear cached hash.",
+            "            r._ATTR_CFG_HASH = null;",
+            "",
+            "            arrayAggregator.apply(null, arguments);",
+            "        }",
+            "    }",
+            "",
+            "    // Utility function used in `_buildCfg` to aggregate ATTRS configs from one",
+            "    // the sender constructor to the receiver constructor.",
+            "    function attrsAggregator(prop, r, s) {",
+            "        BaseCore.modifyAttrs(r, s.ATTRS);",
+            "    }",
+            "",
+            "    Base._build = function(name, main, extensions, px, sx, cfg) {",
+            "",
+            "        var build = Base._build,",
+            "",
+            "            builtClass = build._ctor(main, cfg),",
+            "            buildCfg = build._cfg(main, cfg, extensions),",
+            "",
+            "            _mixCust = build._mixCust,",
+            "",
+            "            dynamic = builtClass._yuibuild.dynamic,",
+            "",
+            "            i, l, extClass, extProto,",
+            "            initializer,",
+            "            destructor;",
+            "",
+            "        // Augment/Aggregate",
+            "        for (i = 0, l = extensions.length; i < l; i++) {",
+            "            extClass = extensions[i];",
+            "",
+            "            extProto = extClass.prototype;",
+            "",
+            "            initializer = extProto[INITIALIZER];",
+            "            destructor = extProto[DESTRUCTOR];",
+            "            delete extProto[INITIALIZER];",
+            "            delete extProto[DESTRUCTOR];",
+            "",
+            "            // Prototype, old non-displacing augment",
+            "            Y.mix(builtClass, extClass, true, null, 1);",
+            "",
+            "            // Custom Statics",
+            "            _mixCust(builtClass, extClass, buildCfg);",
+            "",
+            "            if (initializer) {",
+            "                extProto[INITIALIZER] = initializer;",
+            "            }",
+            "",
+            "            if (destructor) {",
+            "                extProto[DESTRUCTOR] = destructor;",
+            "            }",
+            "",
+            "            builtClass._yuibuild.exts.push(extClass);",
+            "        }",
+            "",
+            "        if (px) {",
+            "            Y.mix(builtClass.prototype, px, true);",
+            "        }",
+            "",
+            "        if (sx) {",
+            "            Y.mix(builtClass, build._clean(sx, buildCfg), true);",
+            "            _mixCust(builtClass, sx, buildCfg);",
+            "        }",
+            "",
+            "        builtClass.prototype.hasImpl = build._impl;",
+            "",
+            "        if (dynamic) {",
+            "            builtClass.NAME = name;",
+            "            builtClass.prototype.constructor = builtClass;",
+            "",
+            "            // Carry along the reference to `modifyAttrs()` from `main`.",
+            "            builtClass.modifyAttrs = main.modifyAttrs;",
+            "        }",
+            "",
+            "        return builtClass;",
+            "    };",
+            "",
+            "    build = Base._build;",
+            "",
+            "    Y.mix(build, {",
+            "",
+            "        _mixCust: function(r, s, cfg) {",
+            "",
+            "            var aggregates,",
+            "                custom,",
+            "                statics,",
+            "                aggr,",
+            "                l,",
+            "                i;",
+            "",
+            "            if (cfg) {",
+            "                aggregates = cfg.aggregates;",
+            "                custom = cfg.custom;",
+            "                statics = cfg.statics;",
+            "            }",
+            "",
+            "            if (statics) {",
+            "                Y.mix(r, s, true, statics);",
+            "            }",
+            "",
+            "            if (aggregates) {",
+            "                for (i = 0, l = aggregates.length; i < l; i++) {",
+            "                    aggr = aggregates[i];",
+            "                    if (!r.hasOwnProperty(aggr) && s.hasOwnProperty(aggr)) {",
+            "                        r[aggr] = L.isArray(s[aggr]) ? [] : {};",
+            "                    }",
+            "                    Y.aggregate(r, s, true, [aggr]);",
+            "                }",
+            "            }",
+            "",
+            "            if (custom) {",
+            "                for (i in custom) {",
+            "                    if (custom.hasOwnProperty(i)) {",
+            "                        custom[i](i, r, s);",
+            "                    }",
+            "                }",
+            "            }",
+            "",
+            "        },",
+            "",
+            "        _tmpl: function(main) {",
+            "",
+            "            function BuiltClass() {",
+            "                BuiltClass.superclass.constructor.apply(this, arguments);",
+            "            }",
+            "            Y.extend(BuiltClass, main);",
+            "",
+            "            return BuiltClass;",
+            "        },",
+            "",
+            "        _impl : function(extClass) {",
+            "            var classes = this._getClasses(), i, l, cls, exts, ll, j;",
+            "            for (i = 0, l = classes.length; i < l; i++) {",
+            "                cls = classes[i];",
+            "                if (cls._yuibuild) {",
+            "                    exts = cls._yuibuild.exts;",
+            "                    ll = exts.length;",
+            "",
+            "                    for (j = 0; j < ll; j++) {",
+            "                        if (exts[j] === extClass) {",
+            "                            return true;",
+            "                        }",
+            "                    }",
+            "                }",
+            "            }",
+            "            return false;",
+            "        },",
+            "",
+            "        _ctor : function(main, cfg) {",
+            "",
+            "           var dynamic = (cfg && false === cfg.dynamic) ? false : true,",
+            "               builtClass = (dynamic) ? build._tmpl(main) : main,",
+            "               buildCfg = builtClass._yuibuild;",
+            "",
+            "            if (!buildCfg) {",
+            "                buildCfg = builtClass._yuibuild = {};",
+            "            }",
+            "",
+            "            buildCfg.id = buildCfg.id || null;",
+            "            buildCfg.exts = buildCfg.exts || [];",
+            "            buildCfg.dynamic = dynamic;",
+            "",
+            "            return builtClass;",
+            "        },",
+            "",
+            "        _cfg : function(main, cfg, exts) {",
+            "            var aggr = [],",
+            "                cust = {},",
+            "                statics = [],",
+            "                buildCfg,",
+            "                cfgAggr = (cfg && cfg.aggregates),",
+            "                cfgCustBuild = (cfg && cfg.custom),",
+            "                cfgStatics = (cfg && cfg.statics),",
+            "                c = main,",
+            "                i,",
+            "                l;",
+            "",
+            "            // Prototype Chain",
+            "            while (c && c.prototype) {",
+            "                buildCfg = c._buildCfg;",
+            "                if (buildCfg) {",
+            "                    if (buildCfg.aggregates) {",
+            "                        aggr = aggr.concat(buildCfg.aggregates);",
+            "                    }",
+            "                    if (buildCfg.custom) {",
+            "                        Y.mix(cust, buildCfg.custom, true);",
+            "                    }",
+            "                    if (buildCfg.statics) {",
+            "                        statics = statics.concat(buildCfg.statics);",
+            "                    }",
+            "                }",
+            "                c = c.superclass ? c.superclass.constructor : null;",
+            "            }",
+            "",
+            "            // Exts",
+            "            if (exts) {",
+            "                for (i = 0, l = exts.length; i < l; i++) {",
+            "                    c = exts[i];",
+            "                    buildCfg = c._buildCfg;",
+            "                    if (buildCfg) {",
+            "                        if (buildCfg.aggregates) {",
+            "                            aggr = aggr.concat(buildCfg.aggregates);",
+            "                        }",
+            "                        if (buildCfg.custom) {",
+            "                            Y.mix(cust, buildCfg.custom, true);",
+            "                        }",
+            "                        if (buildCfg.statics) {",
+            "                            statics = statics.concat(buildCfg.statics);",
+            "                        }",
+            "                    }",
+            "                }",
+            "            }",
+            "",
+            "            if (cfgAggr) {",
+            "                aggr = aggr.concat(cfgAggr);",
+            "            }",
+            "",
+            "            if (cfgCustBuild) {",
+            "                Y.mix(cust, cfg.cfgBuild, true);",
+            "            }",
+            "",
+            "            if (cfgStatics) {",
+            "                statics = statics.concat(cfgStatics);",
+            "            }",
+            "",
+            "            return {",
+            "                aggregates: aggr,",
+            "                custom: cust,",
+            "                statics: statics",
+            "            };",
+            "        },",
+            "",
+            "        _clean : function(sx, cfg) {",
+            "            var prop, i, l, sxclone = Y.merge(sx),",
+            "                aggregates = cfg.aggregates,",
+            "                custom = cfg.custom;",
+            "",
+            "            for (prop in custom) {",
+            "                if (sxclone.hasOwnProperty(prop)) {",
+            "                    delete sxclone[prop];",
+            "                }",
+            "            }",
+            "",
+            "            for (i = 0, l = aggregates.length; i < l; i++) {",
+            "                prop = aggregates[i];",
+            "                if (sxclone.hasOwnProperty(prop)) {",
+            "                    delete sxclone[prop];",
+            "                }",
+            "            }",
+            "",
+            "            return sxclone;",
+            "        }",
+            "    });",
+            "",
+            "    /**",
+            "     * <p>",
+            "     * Builds a custom constructor function (class) from the",
+            "     * main function, and array of extension functions (classes)",
+            "     * provided. The NAME field for the constructor function is",
+            "     * defined by the first argument passed in.",
+            "     * </p>",
+            "     * <p>",
+            "     * The cfg object supports the following properties",
+            "     * </p>",
+            "     * <dl>",
+            "     *    <dt>dynamic &#60;boolean&#62;</dt>",
+            "     *    <dd>",
+            "     *    <p>If true (default), a completely new class",
+            "     *    is created which extends the main class, and acts as the",
+            "     *    host on which the extension classes are augmented.</p>",
+            "     *    <p>If false, the extensions classes are augmented directly to",
+            "     *    the main class, modifying the main class' prototype.</p>",
+            "     *    </dd>",
+            "     *    <dt>aggregates &#60;String[]&#62;</dt>",
+            "     *    <dd>An array of static property names, which will get aggregated",
+            "     *    on to the built class, in addition to the default properties build",
+            "     *    will always aggregate as defined by the main class' static _buildCfg",
+            "     *    property.",
+            "     *    </dd>",
+            "     * </dl>",
+            "     *",
+            "     * @method build",
+            "     * @deprecated Use the more convenient Base.create and Base.mix methods instead",
+            "     * @static",
+            "     * @param {Function} name The name of the new class. Used to define the NAME property for the new class.",
+            "     * @param {Function} main The main class on which to base the built class",
+            "     * @param {Function[]} extensions The set of extension classes which will be",
+            "     * augmented/aggregated to the built class.",
+            "     * @param {Object} cfg Optional. Build configuration for the class (see description).",
+            "     * @return {Function} A custom class, created from the provided main and extension classes",
+            "     */",
+            "    Base.build = function(name, main, extensions, cfg) {",
+            "        return build(name, main, extensions, null, null, cfg);",
+            "    };",
+            "",
+            "    /**",
+            "     * Creates a new class (constructor function) which extends the base class passed in as the second argument,",
+            "     * and mixes in the array of extensions provided.",
+            "     *",
+            "     * Prototype properties or methods can be added to the new class, using the px argument (similar to Y.extend).",
+            "     *",
+            "     * Static properties or methods can be added to the new class, using the sx argument (similar to Y.extend).",
+            "     *",
+            "     * **NOTE FOR COMPONENT DEVELOPERS**: Both the `base` class, and `extensions` can define static a `_buildCfg`",
+            "     * property, which acts as class creation meta-data, and drives how special static properties from the base",
+            "     * class, or extensions should be copied, aggregated or (custom) mixed into the newly created class.",
+            "     *",
+            "     * The `_buildCfg` property is a hash with 3 supported properties: `statics`, `aggregates` and `custom`, e.g:",
+            "     *",
+            "     *     // If the Base/Main class is the thing introducing the property:",
+            "     *",
+            "     *     MyBaseClass._buildCfg = {",
+            "     *",
+            "     *        // Static properties/methods to copy (Alias) to the built class.",
+            "     *        statics: [\"CopyThisMethod\", \"CopyThisProperty\"],",
+            "     *",
+            "     *        // Static props to aggregate onto the built class.",
+            "     *        aggregates: [\"AggregateThisProperty\"],",
+            "     *",
+            "     *        // Static properties which need custom handling (e.g. deep merge etc.)",
+            "     *        custom: {",
+            "     *           \"CustomProperty\" : function(property, Receiver, Supplier) {",
+            "     *              ...",
+            "     *              var triggers = Receiver.CustomProperty.triggers;",
+            "     *              Receiver.CustomProperty.triggers = triggers.concat(Supplier.CustomProperty.triggers);",
+            "     *              ...",
+            "     *           }",
+            "     *        }",
+            "     *     };",
+            "     *",
+            "     *     MyBaseClass.CopyThisMethod = function() {...};",
+            "     *     MyBaseClass.CopyThisProperty = \"foo\";",
+            "     *     MyBaseClass.AggregateThisProperty = {...};",
+            "     *     MyBaseClass.CustomProperty = {",
+            "     *        triggers: [...]",
+            "     *     }",
+            "     *",
+            "     *     // Or, if the Extension is the thing introducing the property:",
+            "     *",
+            "     *     MyExtension._buildCfg = {",
+            "     *         statics : ...",
+            "     *         aggregates : ...",
+            "     *         custom : ...",
+            "     *     }",
+            "     *",
+            "     * This way, when users pass your base or extension class to `Y.Base.create` or `Y.Base.mix`, they don't need to",
+            "     * know which properties need special handling. `Y.Base` has a buildCfg which defines `ATTRS` for custom mix handling",
+            "     * (to protect the static config objects), and `Y.Widget` has a buildCfg which specifies `HTML_PARSER` for",
+            "     * straight up aggregation.",
+            "     *",
+            "     * @method create",
+            "     * @static",
+            "     * @param {String} name The name of the newly created class. Used to define the NAME property for the new class.",
+            "     * @param {Function} main The base class which the new class should extend.",
+            "     * This class needs to be Base or a class derived from base (e.g. Widget).",
+            "     * @param {Function[]} extensions The list of extensions which will be mixed into the built class.",
+            "     * @param {Object} px The set of prototype properties/methods to add to the built class.",
+            "     * @param {Object} sx The set of static properties/methods to add to the built class.",
+            "     * @return {Function} The newly created class.",
+            "     */",
+            "    Base.create = function(name, base, extensions, px, sx) {",
+            "        return build(name, base, extensions, px, sx);",
+            "    };",
+            "",
+            "    /**",
+            "     * <p>Mixes in a list of extensions to an existing class.</p>",
+            "     * @method mix",
+            "     * @static",
+            "     * @param {Function} main The existing class into which the extensions should be mixed.",
+            "     * The class needs to be Base or a class derived from Base (e.g. Widget)",
+            "     * @param {Function[]} extensions The set of extension classes which will mixed into the existing main class.",
+            "     * @return {Function} The modified main class, with extensions mixed in.",
+            "     */",
+            "    Base.mix = function(main, extensions) {",
+            "",
+            "        if (main._CACHED_CLASS_DATA) {",
+            "            main._CACHED_CLASS_DATA = null;",
+            "        }",
+            "",
+            "        return build(null, main, extensions, null, null, {dynamic:false});",
+            "    };",
+            "",
+            "    /**",
+            "     * The build configuration for the Base class.",
+            "     *",
+            "     * Defines the static fields which need to be aggregated when the Base class",
+            "     * is used as the main class passed to the",
+            "     * <a href=\"#method_Base.build\">Base.build</a> method.",
+            "     *",
+            "     * @property _buildCfg",
+            "     * @type Object",
+            "     * @static",
+            "     * @final",
+            "     * @private",
+            "     */",
+            "    BaseCore._buildCfg = {",
+            "        aggregates: AGGREGATES.concat(),",
+            "",
+            "        custom: {",
+            "            ATTRS         : attrsAggregator,",
+            "            _ATTR_CFG     : attrCfgAggregator,",
+            "            _NON_ATTRS_CFG: arrayAggregator",
+            "        }",
+            "    };",
+            "",
+            "    // Makes sure Base and BaseCore use separate `_buildCfg` objects.",
+            "    Base._buildCfg = {",
+            "        aggregates: AGGREGATES.concat(),",
+            "",
+            "        custom: {",
+            "            ATTRS         : attrsAggregator,",
+            "            _ATTR_CFG     : attrCfgAggregator,",
+            "            _NON_ATTRS_CFG: arrayAggregator",
+            "        }",
+            "    };",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"base-base\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "12": 1,
+            "24": 1,
+            "25": 43,
+            "26": 6,
+            "33": 1,
+            "34": 41,
+            "36": 2,
+            "38": 2,
+            "44": 1,
+            "45": 41,
+            "48": 1,
+            "50": 32,
+            "64": 32,
+            "65": 36,
+            "67": 36,
+            "69": 36,
+            "70": 36,
+            "71": 36,
+            "72": 36,
+            "75": 36,
+            "78": 36,
+            "80": 36,
+            "81": 8,
+            "84": 36,
+            "85": 1,
+            "88": 36,
+            "91": 32,
+            "92": 16,
+            "95": 32,
+            "96": 8,
+            "97": 8,
+            "100": 32,
+            "102": 32,
+            "103": 29,
+            "104": 29,
+            "107": 29,
+            "110": 32,
+            "113": 1,
+            "115": 1,
+            "119": 44,
+            "126": 44,
+            "127": 44,
+            "128": 44,
+            "129": 44,
+            "132": 44,
+            "133": 44,
+            "136": 44,
+            "137": 44,
+            "138": 91,
+            "139": 91,
+            "140": 5,
+            "142": 91,
+            "146": 44,
+            "147": 44,
+            "148": 129,
+            "149": 129,
+            "158": 29,
+            "159": 38,
+            "161": 29,
+            "163": 29,
+            "167": 4,
+            "168": 4,
+            "169": 5,
+            "170": 5,
+            "171": 4,
+            "172": 4,
+            "174": 4,
+            "175": 5,
+            "176": 3,
+            "181": 1,
+            "186": 32,
+            "190": 32,
+            "191": 31,
+            "194": 32,
+            "195": 32,
+            "196": 32,
+            "198": 32,
+            "202": 32,
+            "214": 32,
+            "215": 41,
+            "216": 41,
+            "217": 36,
+            "218": 33,
+            "220": 36,
+            "221": 33,
+            "223": 36,
+            "224": 1,
+            "227": 41,
+            "231": 32,
+            "232": 32,
+            "233": 36,
+            "234": 36,
+            "235": 36,
+            "236": 5,
+            "237": 2,
+            "239": 5,
+            "240": 2,
+            "242": 5,
+            "243": 1,
+            "249": 32,
+            "250": 1,
+            "253": 32,
+            "254": 1,
+            "257": 32,
+            "258": 1,
+            "261": 32,
+            "269": 8,
+            "273": 8,
+            "274": 24,
+            "275": 7,
+            "279": 8,
+            "280": 16,
+            "281": 16,
+            "282": 0,
+            "286": 8,
+            "327": 1,
+            "328": 1,
+            "396": 1,
+            "397": 28,
+            "409": 1,
+            "411": 3,
+            "412": 1,
+            "415": 3,
+            "431": 1,
+            "442": 1
+        }
+    }
+}

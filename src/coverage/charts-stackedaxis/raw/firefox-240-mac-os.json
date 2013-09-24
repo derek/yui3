@@ -1,0 +1,83 @@
+{
+    "build/axis-stacked/axis-stacked.js": {
+        "path": "build/axis-stacked/axis-stacked.js",
+        "s": {
+            "1": 1,
+            "2": 1
+        },
+        "b": {},
+        "f": {
+            "1": 1
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 24
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 43
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 23,
+                    "column": 69
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 19,
+                    "column": 0
+                },
+                "end": {
+                    "line": 19,
+                    "column": 77
+                }
+            }
+        },
+        "branchMap": {},
+        "code": [
+            "(function () { YUI.add('axis-stacked', function (Y, NAME) {",
+            "",
+            "/**",
+            " * Provides functionality for drawing a stacked numeric axis for use with a chart.",
+            " *",
+            " * @module charts",
+            " * @submodule axis-stacked",
+            " */",
+            "/**",
+            " * StackedAxis draws a stacked numeric axis for a chart.",
+            " *",
+            " * @class StackedAxis",
+            " * @constructor",
+            " * @param {Object} config (optional) Configuration parameters.",
+            " * @extends NumericAxis",
+            " * @uses StackedImpl",
+            " * @submodule axis-stacked",
+            " */",
+            "Y.StackedAxis = Y.Base.create(\"stackedAxis\", Y.NumericAxis, [Y.StackedImpl]);",
+            "",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"axis-numeric\", \"axis-stacked-base\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "19": 1
+        }
+    }
+}

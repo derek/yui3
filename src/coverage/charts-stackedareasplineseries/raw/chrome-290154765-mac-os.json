@@ -1,0 +1,149 @@
+{
+    "build/series-areaspline-stacked/series-areaspline-stacked.js": {
+        "path": "build/series-areaspline-stacked/series-areaspline-stacked.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+        },
+        "b": {},
+        "f": {
+            "1": 1,
+            "2": 1
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 37
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 56
+                    }
+                }
+            },
+            "2": {
+                "name": "(anonymous_2)",
+                "line": 28,
+                "loc": {
+                    "start": {
+                        "line": 28,
+                        "column": 16
+                    },
+                    "end": {
+                        "line": 29,
+                        "column": 4
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 50,
+                    "column": 71
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 20,
+                    "column": 0
+                },
+                "end": {
+                    "line": 46,
+                    "column": 3
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 30,
+                    "column": 8
+                },
+                "end": {
+                    "line": 30,
+                    "column": 33
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 31,
+                    "column": 8
+                },
+                "end": {
+                    "line": 31,
+                    "column": 37
+                }
+            }
+        },
+        "branchMap": {},
+        "code": [
+            "(function () { YUI.add('series-areaspline-stacked', function (Y, NAME) {",
+            "",
+            "/**",
+            " * Provides functionality for creating a stacked area spline series.",
+            " *",
+            " * @module charts",
+            " * @submodule series-areaspline-stacked",
+            " */",
+            "/**",
+            " * StackedAreaSplineSeries creates a stacked area chart with points data points connected by a curve.",
+            " *",
+            " * @class StackedAreaSplineSeries",
+            " * @extends AreaSeries",
+            " * @uses CurveUtil",
+            " * @uses StackingUtil",
+            " * @constructor",
+            " * @param {Object} config (optional) Configuration parameters.",
+            " * @submodule series-areaspline-stacked",
+            " */",
+            "Y.StackedAreaSplineSeries = Y.Base.create(\"stackedAreaSplineSeries\", Y.AreaSeries, [Y.CurveUtil, Y.StackingUtil], {",
+            "    /**",
+            "     * @protected",
+            "     *",
+            "     * Draws the series.",
+            "     *",
+            "     * @method drawSeries",
+            "     */",
+            "    drawSeries: function()",
+            "    {",
+            "        this._stackCoordinates();",
+            "        this.drawStackedAreaSpline();",
+            "    }",
+            "}, {",
+            "    ATTRS : {",
+            "        /**",
+            "         * Read-only attribute indicating the type of series.",
+            "         *",
+            "         * @attribute type",
+            "         * @type String",
+            "         * @default stackedAreaSpline",
+            "         */",
+            "        type: {",
+            "            value:\"stackedAreaSpline\"",
+            "        }",
+            "    }",
+            "});",
+            "",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"series-stacked\", \"series-areaspline\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "20": 1,
+            "30": 1,
+            "31": 1
+        }
+    }
+}
