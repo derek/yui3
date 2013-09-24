@@ -1,0 +1,2979 @@
+{
+    "build/event-valuechange/event-valuechange.js": {
+        "path": "build/event-valuechange/event-valuechange.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 32,
+            "4": 32,
+            "5": 0,
+            "6": 0,
+            "7": 32,
+            "8": 32,
+            "9": 16,
+            "10": 16,
+            "11": 16,
+            "12": 21,
+            "13": 21,
+            "14": 18,
+            "15": 3,
+            "16": 2,
+            "17": 21,
+            "18": 21,
+            "19": 4,
+            "20": 4,
+            "21": 2,
+            "22": 21,
+            "23": 2,
+            "24": 16,
+            "25": 33,
+            "26": 10,
+            "27": 23,
+            "28": 23,
+            "29": 23,
+            "30": 1,
+            "31": 27,
+            "32": 0,
+            "33": 27,
+            "34": 27,
+            "35": 0,
+            "36": 0,
+            "37": 27,
+            "38": 27,
+            "39": 11,
+            "40": 1,
+            "41": 10,
+            "42": 10,
+            "43": 17,
+            "44": 17,
+            "45": 32,
+            "46": 17,
+            "47": 76,
+            "48": 0,
+            "49": 76,
+            "50": 76,
+            "51": 76,
+            "52": 76,
+            "53": 76,
+            "54": 47,
+            "55": 29,
+            "56": 99,
+            "57": 99,
+            "58": 99,
+            "59": 1,
+            "60": 3,
+            "61": 3,
+            "62": 0,
+            "63": 0,
+            "64": 3,
+            "65": 3,
+            "66": 1,
+            "67": 3,
+            "68": 2,
+            "69": 21,
+            "70": 26,
+            "71": 26,
+            "72": 26,
+            "73": 26,
+            "74": 17,
+            "75": 17,
+            "76": 34,
+            "77": 17,
+            "78": 36,
+            "79": 21,
+            "80": 17,
+            "81": 9,
+            "82": 0,
+            "83": 9,
+            "84": 9,
+            "85": 9,
+            "86": 26,
+            "87": 26,
+            "88": 26,
+            "89": 17,
+            "90": 36,
+            "91": 9,
+            "92": 1,
+            "93": 1,
+            "94": 1,
+            "95": 1
+        },
+        "b": {
+            "1": [
+                32,
+                32
+            ],
+            "2": [
+                32,
+                32
+            ],
+            "3": [
+                0,
+                32
+            ],
+            "4": [
+                32,
+                32
+            ],
+            "5": [
+                16,
+                16
+            ],
+            "6": [
+                16,
+                16,
+                0
+            ],
+            "7": [
+                16,
+                16,
+                0
+            ],
+            "8": [
+                18,
+                3
+            ],
+            "9": [
+                2,
+                1
+            ],
+            "10": [
+                19,
+                2
+            ],
+            "11": [
+                21,
+                21
+            ],
+            "12": [
+                4,
+                17
+            ],
+            "13": [
+                2,
+                2
+            ],
+            "14": [
+                2,
+                19
+            ],
+            "15": [
+                10,
+                23
+            ],
+            "16": [
+                0,
+                27
+            ],
+            "17": [
+                0,
+                27
+            ],
+            "18": [
+                27,
+                16
+            ],
+            "19": [
+                11,
+                16
+            ],
+            "20": [
+                1,
+                10
+            ],
+            "21": [
+                0,
+                76
+            ],
+            "22": [
+                76,
+                19
+            ],
+            "23": [
+                47,
+                29
+            ],
+            "24": [
+                47,
+                26
+            ],
+            "25": [
+                99,
+                19
+            ],
+            "26": [
+                0,
+                3
+            ],
+            "27": [
+                2,
+                1
+            ],
+            "28": [
+                3,
+                2
+            ],
+            "29": [
+                17,
+                9
+            ],
+            "30": [
+                21,
+                15
+            ],
+            "31": [
+                0,
+                9
+            ],
+            "32": [
+                9,
+                0
+            ],
+            "33": [
+                26,
+                26
+            ],
+            "34": [
+                17,
+                9
+            ]
+        },
+        "f": {
+            "1": 1,
+            "2": 32,
+            "3": 21,
+            "4": 33,
+            "5": 1,
+            "6": 27,
+            "7": 32,
+            "8": 76,
+            "9": 99,
+            "10": 1,
+            "11": 3,
+            "12": 1,
+            "13": 3,
+            "14": 21,
+            "15": 26,
+            "16": 34,
+            "17": 36,
+            "18": 26,
+            "19": 36
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 29
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 48
+                    }
+                }
+            },
+            "2": {
+                "name": "(anonymous_2)",
+                "line": 81,
+                "loc": {
+                    "start": {
+                        "line": 81,
+                        "column": 11
+                    },
+                    "end": {
+                        "line": 81,
+                        "column": 36
+                    }
+                }
+            },
+            "3": {
+                "name": "(anonymous_3)",
+                "line": 107,
+                "loc": {
+                    "start": {
+                        "line": 107,
+                        "column": 44
+                    },
+                    "end": {
+                        "line": 107,
+                        "column": 64
+                    }
+                }
+            },
+            "4": {
+                "name": "(anonymous_4)",
+                "line": 151,
+                "loc": {
+                    "start": {
+                        "line": 151,
+                        "column": 21
+                    },
+                    "end": {
+                        "line": 151,
+                        "column": 47
+                    }
+                }
+            },
+            "5": {
+                "name": "(anonymous_5)",
+                "line": 164,
+                "loc": {
+                    "start": {
+                        "line": 164,
+                        "column": 36
+                    },
+                    "end": {
+                        "line": 164,
+                        "column": 48
+                    }
+                }
+            },
+            "6": {
+                "name": "(anonymous_6)",
+                "line": 188,
+                "loc": {
+                    "start": {
+                        "line": 188,
+                        "column": 19
+                    },
+                    "end": {
+                        "line": 188,
+                        "column": 54
+                    }
+                }
+            },
+            "7": {
+                "name": "(anonymous_7)",
+                "line": 219,
+                "loc": {
+                    "start": {
+                        "line": 219,
+                        "column": 38
+                    },
+                    "end": {
+                        "line": 219,
+                        "column": 50
+                    }
+                }
+            },
+            "8": {
+                "name": "(anonymous_8)",
+                "line": 237,
+                "loc": {
+                    "start": {
+                        "line": 237,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 237,
+                        "column": 44
+                    }
+                }
+            },
+            "9": {
+                "name": "(anonymous_9)",
+                "line": 267,
+                "loc": {
+                    "start": {
+                        "line": 267,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 267,
+                        "column": 34
+                    }
+                }
+            },
+            "10": {
+                "name": "(anonymous_10)",
+                "line": 285,
+                "loc": {
+                    "start": {
+                        "line": 285,
+                        "column": 13
+                    },
+                    "end": {
+                        "line": 285,
+                        "column": 36
+                    }
+                }
+            },
+            "11": {
+                "name": "(anonymous_11)",
+                "line": 298,
+                "loc": {
+                    "start": {
+                        "line": 298,
+                        "column": 14
+                    },
+                    "end": {
+                        "line": 298,
+                        "column": 37
+                    }
+                }
+            },
+            "12": {
+                "name": "(anonymous_12)",
+                "line": 321,
+                "loc": {
+                    "start": {
+                        "line": 321,
+                        "column": 16
+                    },
+                    "end": {
+                        "line": 321,
+                        "column": 39
+                    }
+                }
+            },
+            "13": {
+                "name": "(anonymous_13)",
+                "line": 334,
+                "loc": {
+                    "start": {
+                        "line": 334,
+                        "column": 14
+                    },
+                    "end": {
+                        "line": 334,
+                        "column": 37
+                    }
+                }
+            },
+            "14": {
+                "name": "(anonymous_14)",
+                "line": 354,
+                "loc": {
+                    "start": {
+                        "line": 354,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 354,
+                        "column": 41
+                    }
+                }
+            },
+            "15": {
+                "name": "(anonymous_15)",
+                "line": 370,
+                "loc": {
+                    "start": {
+                        "line": 370,
+                        "column": 18
+                    },
+                    "end": {
+                        "line": 370,
+                        "column": 57
+                    }
+                }
+            },
+            "16": {
+                "name": "(anonymous_16)",
+                "line": 391,
+                "loc": {
+                    "start": {
+                        "line": 391,
+                        "column": 36
+                    },
+                    "end": {
+                        "line": 391,
+                        "column": 48
+                    }
+                }
+            },
+            "17": {
+                "name": "(anonymous_17)",
+                "line": 397,
+                "loc": {
+                    "start": {
+                        "line": 397,
+                        "column": 41
+                    },
+                    "end": {
+                        "line": 397,
+                        "column": 58
+                    }
+                }
+            },
+            "18": {
+                "name": "(anonymous_18)",
+                "line": 430,
+                "loc": {
+                    "start": {
+                        "line": 430,
+                        "column": 20
+                    },
+                    "end": {
+                        "line": 430,
+                        "column": 60
+                    }
+                }
+            },
+            "19": {
+                "name": "(anonymous_19)",
+                "line": 436,
+                "loc": {
+                    "start": {
+                        "line": 436,
+                        "column": 41
+                    },
+                    "end": {
+                        "line": 436,
+                        "column": 58
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 489,
+                    "column": 66
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 33,
+                    "column": 0
+                },
+                "end": {
+                    "line": 443,
+                    "column": 2
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 82,
+                    "column": 8
+                },
+                "end": {
+                    "line": 87,
+                    "column": 41
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 89,
+                    "column": 8
+                },
+                "end": {
+                    "line": 92,
+                    "column": 9
+                }
+            },
+            "5": {
+                "start": {
+                    "line": 90,
+                    "column": 12
+                },
+                "end": {
+                    "line": 90,
+                    "column": 34
+                }
+            },
+            "6": {
+                "start": {
+                    "line": 91,
+                    "column": 12
+                },
+                "end": {
+                    "line": 91,
+                    "column": 19
+                }
+            },
+            "7": {
+                "start": {
+                    "line": 94,
+                    "column": 8
+                },
+                "end": {
+                    "line": 94,
+                    "column": 33
+                }
+            },
+            "8": {
+                "start": {
+                    "line": 96,
+                    "column": 8
+                },
+                "end": {
+                    "line": 139,
+                    "column": 9
+                }
+            },
+            "9": {
+                "start": {
+                    "line": 97,
+                    "column": 12
+                },
+                "end": {
+                    "line": 97,
+                    "column": 36
+                }
+            },
+            "10": {
+                "start": {
+                    "line": 99,
+                    "column": 12
+                },
+                "end": {
+                    "line": 105,
+                    "column": 14
+                }
+            },
+            "11": {
+                "start": {
+                    "line": 107,
+                    "column": 12
+                },
+                "end": {
+                    "line": 136,
+                    "column": 15
+                }
+            },
+            "12": {
+                "start": {
+                    "line": 108,
+                    "column": 16
+                },
+                "end": {
+                    "line": 109,
+                    "column": 31
+                }
+            },
+            "13": {
+                "start": {
+                    "line": 112,
+                    "column": 16
+                },
+                "end": {
+                    "line": 116,
+                    "column": 17
+                }
+            },
+            "14": {
+                "start": {
+                    "line": 113,
+                    "column": 20
+                },
+                "end": {
+                    "line": 113,
+                    "column": 42
+                }
+            },
+            "15": {
+                "start": {
+                    "line": 114,
+                    "column": 23
+                },
+                "end": {
+                    "line": 116,
+                    "column": 17
+                }
+            },
+            "16": {
+                "start": {
+                    "line": 115,
+                    "column": 20
+                },
+                "end": {
+                    "line": 115,
+                    "column": 42
+                }
+            },
+            "17": {
+                "start": {
+                    "line": 118,
+                    "column": 16
+                },
+                "end": {
+                    "line": 118,
+                    "column": 74
+                }
+            },
+            "18": {
+                "start": {
+                    "line": 124,
+                    "column": 16
+                },
+                "end": {
+                    "line": 130,
+                    "column": 17
+                }
+            },
+            "19": {
+                "start": {
+                    "line": 125,
+                    "column": 20
+                },
+                "end": {
+                    "line": 125,
+                    "column": 41
+                }
+            },
+            "20": {
+                "start": {
+                    "line": 127,
+                    "column": 20
+                },
+                "end": {
+                    "line": 129,
+                    "column": 21
+                }
+            },
+            "21": {
+                "start": {
+                    "line": 128,
+                    "column": 24
+                },
+                "end": {
+                    "line": 128,
+                    "column": 45
+                }
+            },
+            "22": {
+                "start": {
+                    "line": 133,
+                    "column": 16
+                },
+                "end": {
+                    "line": 135,
+                    "column": 17
+                }
+            },
+            "23": {
+                "start": {
+                    "line": 134,
+                    "column": 20
+                },
+                "end": {
+                    "line": 134,
+                    "column": 32
+                }
+            },
+            "24": {
+                "start": {
+                    "line": 138,
+                    "column": 12
+                },
+                "end": {
+                    "line": 138,
+                    "column": 37
+                }
+            },
+            "25": {
+                "start": {
+                    "line": 154,
+                    "column": 8
+                },
+                "end": {
+                    "line": 156,
+                    "column": 9
+                }
+            },
+            "26": {
+                "start": {
+                    "line": 155,
+                    "column": 12
+                },
+                "end": {
+                    "line": 155,
+                    "column": 19
+                }
+            },
+            "27": {
+                "start": {
+                    "line": 158,
+                    "column": 8
+                },
+                "end": {
+                    "line": 158,
+                    "column": 44
+                }
+            },
+            "28": {
+                "start": {
+                    "line": 160,
+                    "column": 8
+                },
+                "end": {
+                    "line": 160,
+                    "column": 30
+                }
+            },
+            "29": {
+                "start": {
+                    "line": 164,
+                    "column": 8
+                },
+                "end": {
+                    "line": 166,
+                    "column": 23
+                }
+            },
+            "30": {
+                "start": {
+                    "line": 165,
+                    "column": 12
+                },
+                "end": {
+                    "line": 165,
+                    "column": 44
+                }
+            },
+            "31": {
+                "start": {
+                    "line": 189,
+                    "column": 8
+                },
+                "end": {
+                    "line": 191,
+                    "column": 9
+                }
+            },
+            "32": {
+                "start": {
+                    "line": 190,
+                    "column": 12
+                },
+                "end": {
+                    "line": 190,
+                    "column": 19
+                }
+            },
+            "33": {
+                "start": {
+                    "line": 193,
+                    "column": 8
+                },
+                "end": {
+                    "line": 193,
+                    "column": 44
+                }
+            },
+            "34": {
+                "start": {
+                    "line": 195,
+                    "column": 8
+                },
+                "end": {
+                    "line": 198,
+                    "column": 9
+                }
+            },
+            "35": {
+                "start": {
+                    "line": 196,
+                    "column": 12
+                },
+                "end": {
+                    "line": 196,
+                    "column": 48
+                }
+            },
+            "36": {
+                "start": {
+                    "line": 197,
+                    "column": 12
+                },
+                "end": {
+                    "line": 197,
+                    "column": 43
+                }
+            },
+            "37": {
+                "start": {
+                    "line": 200,
+                    "column": 8
+                },
+                "end": {
+                    "line": 200,
+                    "column": 52
+                }
+            },
+            "38": {
+                "start": {
+                    "line": 204,
+                    "column": 8
+                },
+                "end": {
+                    "line": 211,
+                    "column": 9
+                }
+            },
+            "39": {
+                "start": {
+                    "line": 205,
+                    "column": 12
+                },
+                "end": {
+                    "line": 210,
+                    "column": 13
+                }
+            },
+            "40": {
+                "start": {
+                    "line": 206,
+                    "column": 16
+                },
+                "end": {
+                    "line": 206,
+                    "column": 48
+                }
+            },
+            "41": {
+                "start": {
+                    "line": 208,
+                    "column": 16
+                },
+                "end": {
+                    "line": 208,
+                    "column": 63
+                }
+            },
+            "42": {
+                "start": {
+                    "line": 209,
+                    "column": 16
+                },
+                "end": {
+                    "line": 209,
+                    "column": 23
+                }
+            },
+            "43": {
+                "start": {
+                    "line": 217,
+                    "column": 8
+                },
+                "end": {
+                    "line": 217,
+                    "column": 55
+                }
+            },
+            "44": {
+                "start": {
+                    "line": 219,
+                    "column": 8
+                },
+                "end": {
+                    "line": 221,
+                    "column": 29
+                }
+            },
+            "45": {
+                "start": {
+                    "line": 220,
+                    "column": 12
+                },
+                "end": {
+                    "line": 220,
+                    "column": 36
+                }
+            },
+            "46": {
+                "start": {
+                    "line": 224,
+                    "column": 8
+                },
+                "end": {
+                    "line": 224,
+                    "column": 43
+                }
+            },
+            "47": {
+                "start": {
+                    "line": 240,
+                    "column": 8
+                },
+                "end": {
+                    "line": 242,
+                    "column": 9
+                }
+            },
+            "48": {
+                "start": {
+                    "line": 241,
+                    "column": 12
+                },
+                "end": {
+                    "line": 241,
+                    "column": 19
+                }
+            },
+            "49": {
+                "start": {
+                    "line": 244,
+                    "column": 8
+                },
+                "end": {
+                    "line": 244,
+                    "column": 50
+                }
+            },
+            "50": {
+                "start": {
+                    "line": 246,
+                    "column": 8
+                },
+                "end": {
+                    "line": 246,
+                    "column": 39
+                }
+            },
+            "51": {
+                "start": {
+                    "line": 247,
+                    "column": 8
+                },
+                "end": {
+                    "line": 247,
+                    "column": 31
+                }
+            },
+            "52": {
+                "start": {
+                    "line": 249,
+                    "column": 8
+                },
+                "end": {
+                    "line": 249,
+                    "column": 30
+                }
+            },
+            "53": {
+                "start": {
+                    "line": 251,
+                    "column": 8
+                },
+                "end": {
+                    "line": 255,
+                    "column": 9
+                }
+            },
+            "54": {
+                "start": {
+                    "line": 252,
+                    "column": 12
+                },
+                "end": {
+                    "line": 252,
+                    "column": 75
+                }
+            },
+            "55": {
+                "start": {
+                    "line": 254,
+                    "column": 12
+                },
+                "end": {
+                    "line": 254,
+                    "column": 34
+                }
+            },
+            "56": {
+                "start": {
+                    "line": 268,
+                    "column": 8
+                },
+                "end": {
+                    "line": 268,
+                    "column": 50
+                }
+            },
+            "57": {
+                "start": {
+                    "line": 270,
+                    "column": 8
+                },
+                "end": {
+                    "line": 270,
+                    "column": 37
+                }
+            },
+            "58": {
+                "start": {
+                    "line": 271,
+                    "column": 8
+                },
+                "end": {
+                    "line": 271,
+                    "column": 30
+                }
+            },
+            "59": {
+                "start": {
+                    "line": 286,
+                    "column": 8
+                },
+                "end": {
+                    "line": 286,
+                    "column": 51
+                }
+            },
+            "60": {
+                "start": {
+                    "line": 299,
+                    "column": 8
+                },
+                "end": {
+                    "line": 300,
+                    "column": 44
+                }
+            },
+            "61": {
+                "start": {
+                    "line": 302,
+                    "column": 8
+                },
+                "end": {
+                    "line": 305,
+                    "column": 9
+                }
+            },
+            "62": {
+                "start": {
+                    "line": 303,
+                    "column": 12
+                },
+                "end": {
+                    "line": 303,
+                    "column": 24
+                }
+            },
+            "63": {
+                "start": {
+                    "line": 304,
+                    "column": 12
+                },
+                "end": {
+                    "line": 304,
+                    "column": 43
+                }
+            },
+            "64": {
+                "start": {
+                    "line": 307,
+                    "column": 8
+                },
+                "end": {
+                    "line": 307,
+                    "column": 41
+                }
+            },
+            "65": {
+                "start": {
+                    "line": 309,
+                    "column": 8
+                },
+                "end": {
+                    "line": 309,
+                    "column": 49
+                }
+            },
+            "66": {
+                "start": {
+                    "line": 322,
+                    "column": 8
+                },
+                "end": {
+                    "line": 322,
+                    "column": 60
+                }
+            },
+            "67": {
+                "start": {
+                    "line": 337,
+                    "column": 8
+                },
+                "end": {
+                    "line": 342,
+                    "column": 9
+                }
+            },
+            "68": {
+                "start": {
+                    "line": 338,
+                    "column": 12
+                },
+                "end": {
+                    "line": 341,
+                    "column": 15
+                }
+            },
+            "69": {
+                "start": {
+                    "line": 355,
+                    "column": 8
+                },
+                "end": {
+                    "line": 355,
+                    "column": 60
+                }
+            },
+            "70": {
+                "start": {
+                    "line": 371,
+                    "column": 8
+                },
+                "end": {
+                    "line": 371,
+                    "column": 43
+                }
+            },
+            "71": {
+                "start": {
+                    "line": 373,
+                    "column": 8
+                },
+                "end": {
+                    "line": 379,
+                    "column": 10
+                }
+            },
+            "72": {
+                "start": {
+                    "line": 383,
+                    "column": 8
+                },
+                "end": {
+                    "line": 383,
+                    "column": 50
+                }
+            },
+            "73": {
+                "start": {
+                    "line": 385,
+                    "column": 8
+                },
+                "end": {
+                    "line": 417,
+                    "column": 9
+                }
+            },
+            "74": {
+                "start": {
+                    "line": 387,
+                    "column": 12
+                },
+                "end": {
+                    "line": 387,
+                    "column": 42
+                }
+            },
+            "75": {
+                "start": {
+                    "line": 391,
+                    "column": 12
+                },
+                "end": {
+                    "line": 393,
+                    "column": 14
+                }
+            },
+            "76": {
+                "start": {
+                    "line": 392,
+                    "column": 16
+                },
+                "end": {
+                    "line": 392,
+                    "column": 65
+                }
+            },
+            "77": {
+                "start": {
+                    "line": 397,
+                    "column": 12
+                },
+                "end": {
+                    "line": 401,
+                    "column": 15
+                }
+            },
+            "78": {
+                "start": {
+                    "line": 398,
+                    "column": 16
+                },
+                "end": {
+                    "line": 400,
+                    "column": 17
+                }
+            },
+            "79": {
+                "start": {
+                    "line": 399,
+                    "column": 20
+                },
+                "end": {
+                    "line": 399,
+                    "column": 73
+                }
+            },
+            "80": {
+                "start": {
+                    "line": 403,
+                    "column": 12
+                },
+                "end": {
+                    "line": 404,
+                    "column": 26
+                }
+            },
+            "81": {
+                "start": {
+                    "line": 408,
+                    "column": 12
+                },
+                "end": {
+                    "line": 410,
+                    "column": 13
+                }
+            },
+            "82": {
+                "start": {
+                    "line": 409,
+                    "column": 16
+                },
+                "end": {
+                    "line": 409,
+                    "column": 23
+                }
+            },
+            "83": {
+                "start": {
+                    "line": 412,
+                    "column": 12
+                },
+                "end": {
+                    "line": 414,
+                    "column": 13
+                }
+            },
+            "84": {
+                "start": {
+                    "line": 413,
+                    "column": 16
+                },
+                "end": {
+                    "line": 413,
+                    "column": 67
+                }
+            },
+            "85": {
+                "start": {
+                    "line": 416,
+                    "column": 12
+                },
+                "end": {
+                    "line": 416,
+                    "column": 73
+                }
+            },
+            "86": {
+                "start": {
+                    "line": 431,
+                    "column": 8
+                },
+                "end": {
+                    "line": 431,
+                    "column": 49
+                }
+            },
+            "87": {
+                "start": {
+                    "line": 433,
+                    "column": 8
+                },
+                "end": {
+                    "line": 433,
+                    "column": 56
+                }
+            },
+            "88": {
+                "start": {
+                    "line": 435,
+                    "column": 8
+                },
+                "end": {
+                    "line": 441,
+                    "column": 9
+                }
+            },
+            "89": {
+                "start": {
+                    "line": 436,
+                    "column": 12
+                },
+                "end": {
+                    "line": 438,
+                    "column": 15
+                }
+            },
+            "90": {
+                "start": {
+                    "line": 437,
+                    "column": 16
+                },
+                "end": {
+                    "line": 437,
+                    "column": 49
+                }
+            },
+            "91": {
+                "start": {
+                    "line": 440,
+                    "column": 12
+                },
+                "end": {
+                    "line": 440,
+                    "column": 44
+                }
+            },
+            "92": {
+                "start": {
+                    "line": 471,
+                    "column": 0
+                },
+                "end": {
+                    "line": 481,
+                    "column": 2
+                }
+            },
+            "93": {
+                "start": {
+                    "line": 483,
+                    "column": 0
+                },
+                "end": {
+                    "line": 483,
+                    "column": 38
+                }
+            },
+            "94": {
+                "start": {
+                    "line": 484,
+                    "column": 0
+                },
+                "end": {
+                    "line": 484,
+                    "column": 38
+                }
+            },
+            "95": {
+                "start": {
+                    "line": 486,
+                    "column": 0
+                },
+                "end": {
+                    "line": 486,
+                    "column": 19
+                }
+            }
+        },
+        "branchMap": {
+            "1": {
+                "line": 84,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 84,
+                            "column": 22
+                        },
+                        "end": {
+                            "line": 84,
+                            "column": 29
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 84,
+                            "column": 33
+                        },
+                        "end": {
+                            "line": 84,
+                            "column": 46
+                        }
+                    }
+                ]
+            },
+            "2": {
+                "line": 85,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 85,
+                            "column": 22
+                        },
+                        "end": {
+                            "line": 85,
+                            "column": 32
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 85,
+                            "column": 36
+                        },
+                        "end": {
+                            "line": 85,
+                            "column": 56
+                        }
+                    }
+                ]
+            },
+            "3": {
+                "line": 89,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 89,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 89,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "line": 89,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 89,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 89,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 31
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "line": 96,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 96,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 96,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 96,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 96,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "6": {
+                "line": 101,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 101,
+                            "column": 32
+                        },
+                        "end": {
+                            "line": 101,
+                            "column": 37
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 101,
+                            "column": 41
+                        },
+                        "end": {
+                            "line": 101,
+                            "column": 60
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 101,
+                            "column": 65
+                        },
+                        "end": {
+                            "line": 101,
+                            "column": 69
+                        }
+                    }
+                ]
+            },
+            "7": {
+                "line": 104,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 104,
+                            "column": 32
+                        },
+                        "end": {
+                            "line": 104,
+                            "column": 37
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 104,
+                            "column": 41
+                        },
+                        "end": {
+                            "line": 104,
+                            "column": 53
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 104,
+                            "column": 58
+                        },
+                        "end": {
+                            "line": 104,
+                            "column": 62
+                        }
+                    }
+                ]
+            },
+            "8": {
+                "line": 112,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 112,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 112,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 112,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 112,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "9": {
+                "line": 114,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 114,
+                            "column": 23
+                        },
+                        "end": {
+                            "line": 114,
+                            "column": 23
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 114,
+                            "column": 23
+                        },
+                        "end": {
+                            "line": 114,
+                            "column": 23
+                        }
+                    }
+                ]
+            },
+            "10": {
+                "line": 118,
+                "type": "cond-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 118,
+                            "column": 50
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 69
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 118,
+                            "column": 72
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 73
+                        }
+                    }
+                ]
+            },
+            "11": {
+                "line": 118,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 118,
+                            "column": 29
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 32
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 118,
+                            "column": 36
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 47
+                        }
+                    }
+                ]
+            },
+            "12": {
+                "line": 124,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 124,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 124,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 124,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 124,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "13": {
+                "line": 127,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 127,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 127,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 127,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 127,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "14": {
+                "line": 133,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 133,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 133,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 133,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 133,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "15": {
+                "line": 154,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 154,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 154,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 154,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 154,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "16": {
+                "line": 189,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 189,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 189,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 189,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 189,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "17": {
+                "line": 195,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 195,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 195,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 195,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 195,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "18": {
+                "line": 200,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 200,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 200,
+                            "column": 24
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 200,
+                            "column": 29
+                        },
+                        "end": {
+                            "line": 200,
+                            "column": 50
+                        }
+                    }
+                ]
+            },
+            "19": {
+                "line": 204,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 204,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 204,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 204,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 204,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "20": {
+                "line": 205,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 205,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 205,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 205,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 205,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "21": {
+                "line": 240,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 240,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 240,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 240,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 240,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "22": {
+                "line": 244,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 244,
+                            "column": 21
+                        },
+                        "end": {
+                            "line": 244,
+                            "column": 43
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 244,
+                            "column": 47
+                        },
+                        "end": {
+                            "line": 244,
+                            "column": 49
+                        }
+                    }
+                ]
+            },
+            "23": {
+                "line": 251,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 251,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 251,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 251,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 251,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "24": {
+                "line": 252,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 252,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 252,
+                            "column": 28
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 252,
+                            "column": 32
+                        },
+                        "end": {
+                            "line": 252,
+                            "column": 74
+                        }
+                    }
+                ]
+            },
+            "25": {
+                "line": 268,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 268,
+                            "column": 21
+                        },
+                        "end": {
+                            "line": 268,
+                            "column": 43
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 268,
+                            "column": 47
+                        },
+                        "end": {
+                            "line": 268,
+                            "column": 49
+                        }
+                    }
+                ]
+            },
+            "26": {
+                "line": 302,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 302,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 302,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 302,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 302,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "27": {
+                "line": 337,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 337,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 337,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 337,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 337,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "28": {
+                "line": 337,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 337,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 337,
+                            "column": 30
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 337,
+                            "column": 34
+                        },
+                        "end": {
+                            "line": 337,
+                            "column": 52
+                        }
+                    }
+                ]
+            },
+            "29": {
+                "line": 385,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 385,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 385,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 385,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 385,
+                            "column": 8
+                        }
+                    }
+                ]
+            },
+            "30": {
+                "line": 398,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 398,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 398,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 398,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 398,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "31": {
+                "line": 408,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 408,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 408,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 408,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 408,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "32": {
+                "line": 412,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 412,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 412,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 412,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 412,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "33": {
+                "line": 433,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 433,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 433,
+                            "column": 25
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 433,
+                            "column": 29
+                        },
+                        "end": {
+                            "line": 433,
+                            "column": 55
+                        }
+                    }
+                ]
+            },
+            "34": {
+                "line": 435,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 435,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 435,
+                            "column": 8
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 435,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 435,
+                            "column": 8
+                        }
+                    }
+                ]
+            }
+        },
+        "code": [
+            "(function () { YUI.add('event-valuechange', function (Y, NAME) {",
+            "",
+            "/**",
+            "Adds a synthetic `valuechange` event that fires when the `value` property of an",
+            "`<input>` or `<textarea>` node changes as a result of a keystroke, mouse",
+            "operation, or input method editor (IME) input event.",
+            "",
+            "Usage:",
+            "",
+            "    YUI().use('event-valuechange', function (Y) {",
+            "        Y.one('#my-input').on('valuechange', function (e) {",
+            "        });",
+            "    });",
+            "",
+            "@module event-valuechange",
+            "**/",
+            "",
+            "/**",
+            "Provides the implementation for the synthetic `valuechange` event. This class",
+            "isn't meant to be used directly, but is public to make monkeypatching possible.",
+            "",
+            "Usage:",
+            "",
+            "    YUI().use('event-valuechange', function (Y) {",
+            "        Y.one('#my-input').on('valuechange', function (e) {",
+            "        });",
+            "    });",
+            "",
+            "@class ValueChange",
+            "@static",
+            "*/",
+            "",
+            "var DATA_KEY = '_valuechange',",
+            "    VALUE    = 'value',",
+            "",
+            "    config, // defined at the end of this file",
+            "",
+            "// Just a simple namespace to make methods overridable.",
+            "VC = {",
+            "    // -- Static Constants -----------------------------------------------------",
+            "",
+            "    /**",
+            "    Interval (in milliseconds) at which to poll for changes to the value of an",
+            "    element with one or more `valuechange` subscribers when the user is likely",
+            "    to be interacting with it.",
+            "",
+            "    @property POLL_INTERVAL",
+            "    @type Number",
+            "    @default 50",
+            "    @static",
+            "    **/",
+            "    POLL_INTERVAL: 50,",
+            "",
+            "    /**",
+            "    Timeout (in milliseconds) after which to stop polling when there hasn't been",
+            "    any new activity (keypresses, mouse clicks, etc.) on an element.",
+            "",
+            "    @property TIMEOUT",
+            "    @type Number",
+            "    @default 10000",
+            "    @static",
+            "    **/",
+            "    TIMEOUT: 10000,",
+            "",
+            "    // -- Protected Static Methods ---------------------------------------------",
+            "",
+            "    /**",
+            "    Called at an interval to poll for changes to the value of the specified",
+            "    node.",
+            "",
+            "    @method _poll",
+            "    @param {Node} node Node to poll.",
+            "",
+            "    @param {Object} options Options object.",
+            "        @param {EventFacade} [options.e] Event facade of the event that",
+            "            initiated the polling.",
+            "",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _poll: function (node, options) {",
+            "        var domNode = node._node, // performance cheat; getValue() is a big hit when polling",
+            "            event   = options.e,",
+            "            newVal  = domNode && domNode.value,",
+            "            vcData  = node._data && node._data[DATA_KEY], // another perf cheat",
+            "            stopped = 0,",
+            "            facade, prevVal, stopElement;",
+            "",
+            "        if (!domNode || !vcData) {",
+            "            VC._stopPolling(node);",
+            "            return;",
+            "        }",
+            "",
+            "        prevVal = vcData.prevVal;",
+            "",
+            "        if (newVal !== prevVal) {",
+            "            vcData.prevVal = newVal;",
+            "",
+            "            facade = {",
+            "                _event       : event,",
+            "                currentTarget: (event && event.currentTarget) || node,",
+            "                newVal       : newVal,",
+            "                prevVal      : prevVal,",
+            "                target       : (event && event.target) || node",
+            "            };",
+            "",
+            "            Y.Object.some(vcData.notifiers, function (notifier) {",
+            "                var evt = notifier.handle.evt,",
+            "                    newStopped;",
+            "",
+            "                // support e.stopPropagation()",
+            "                if (stopped !== 1) {",
+            "                    notifier.fire(facade);",
+            "                } else if (evt.el === stopElement) {",
+            "                    notifier.fire(facade);",
+            "                }",
+            "",
+            "                newStopped = evt && evt._facade ? evt._facade.stopped : 0;",
+            "",
+            "                // need to consider the condition in which there are two",
+            "                // listeners on the same element:",
+            "                // listener 1 calls e.stopPropagation()",
+            "                // listener 2 calls e.stopImmediatePropagation()",
+            "                if (newStopped > stopped) {",
+            "                    stopped = newStopped;",
+            "",
+            "                    if (stopped === 1) {",
+            "                        stopElement = evt.el;",
+            "                    }",
+            "                }",
+            "",
+            "                // support e.stopImmediatePropagation()",
+            "                if (stopped === 2) {",
+            "                    return true;",
+            "                }",
+            "            });",
+            "",
+            "            VC._refreshTimeout(node);",
+            "        }",
+            "    },",
+            "",
+            "    /**",
+            "    Restarts the inactivity timeout for the specified node.",
+            "",
+            "    @method _refreshTimeout",
+            "    @param {Node} node Node to refresh.",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _refreshTimeout: function (node, notifier) {",
+            "        // The node may have been destroyed, so check that it still exists",
+            "        // before trying to get its data. Otherwise an error will occur.",
+            "        if (!node._node) {",
+            "            return;",
+            "        }",
+            "",
+            "        var vcData = node.getData(DATA_KEY);",
+            "",
+            "        VC._stopTimeout(node); // avoid dupes",
+            "",
+            "        // If we don't see any changes within the timeout period (10 seconds by",
+            "        // default), stop polling.",
+            "        vcData.timeout = setTimeout(function () {",
+            "            VC._stopPolling(node, notifier);",
+            "        }, VC.TIMEOUT);",
+            "",
+            "    },",
+            "",
+            "    /**",
+            "    Begins polling for changes to the `value` property of the specified node. If",
+            "    polling is already underway for the specified node, it will not be restarted",
+            "    unless the `force` option is `true`",
+            "",
+            "    @method _startPolling",
+            "    @param {Node} node Node to watch.",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "",
+            "    @param {Object} options Options object.",
+            "        @param {EventFacade} [options.e] Event facade of the event that",
+            "            initiated the polling.",
+            "        @param {Boolean} [options.force=false] If `true`, polling will be",
+            "            restarted even if we're already polling this node.",
+            "",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _startPolling: function (node, notifier, options) {",
+            "        if (!node.test('input,textarea')) {",
+            "            return;",
+            "        }",
+            "",
+            "        var vcData = node.getData(DATA_KEY);",
+            "",
+            "        if (!vcData) {",
+            "            vcData = {prevVal: node.get(VALUE)};",
+            "            node.setData(DATA_KEY, vcData);",
+            "        }",
+            "",
+            "        vcData.notifiers || (vcData.notifiers = {});",
+            "",
+            "        // Don't bother continuing if we're already polling this node, unless",
+            "        // `options.force` is true.",
+            "        if (vcData.interval) {",
+            "            if (options.force) {",
+            "                VC._stopPolling(node, notifier); // restart polling, but avoid dupe polls",
+            "            } else {",
+            "                vcData.notifiers[Y.stamp(notifier)] = notifier;",
+            "                return;",
+            "            }",
+            "        }",
+            "",
+            "        // Poll for changes to the node's value. We can't rely on keyboard",
+            "        // events for this, since the value may change due to a mouse-initiated",
+            "        // paste event, an IME input event, or for some other reason that",
+            "        // doesn't trigger a key event.",
+            "        vcData.notifiers[Y.stamp(notifier)] = notifier;",
+            "",
+            "        vcData.interval = setInterval(function () {",
+            "            VC._poll(node, options);",
+            "        }, VC.POLL_INTERVAL);",
+            "",
+            "",
+            "        VC._refreshTimeout(node, notifier);",
+            "    },",
+            "",
+            "    /**",
+            "    Stops polling for changes to the specified node's `value` attribute.",
+            "",
+            "    @method _stopPolling",
+            "    @param {Node} node Node to stop polling on.",
+            "    @param {SyntheticEvent.Notifier} [notifier] Notifier to remove from the",
+            "        node. If not specified, all notifiers will be removed.",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _stopPolling: function (node, notifier) {",
+            "        // The node may have been destroyed, so check that it still exists",
+            "        // before trying to get its data. Otherwise an error will occur.",
+            "        if (!node._node) {",
+            "            return;",
+            "        }",
+            "",
+            "        var vcData = node.getData(DATA_KEY) || {};",
+            "",
+            "        clearInterval(vcData.interval);",
+            "        delete vcData.interval;",
+            "",
+            "        VC._stopTimeout(node);",
+            "",
+            "        if (notifier) {",
+            "            vcData.notifiers && delete vcData.notifiers[Y.stamp(notifier)];",
+            "        } else {",
+            "            vcData.notifiers = {};",
+            "        }",
+            "",
+            "    },",
+            "",
+            "    /**",
+            "    Clears the inactivity timeout for the specified node, if any.",
+            "",
+            "    @method _stopTimeout",
+            "    @param {Node} node",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _stopTimeout: function (node) {",
+            "        var vcData = node.getData(DATA_KEY) || {};",
+            "",
+            "        clearTimeout(vcData.timeout);",
+            "        delete vcData.timeout;",
+            "    },",
+            "",
+            "    // -- Protected Static Event Handlers --------------------------------------",
+            "",
+            "    /**",
+            "    Stops polling when a node's blur event fires.",
+            "",
+            "    @method _onBlur",
+            "    @param {EventFacade} e",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _onBlur: function (e, notifier) {",
+            "        VC._stopPolling(e.currentTarget, notifier);",
+            "    },",
+            "",
+            "    /**",
+            "    Resets a node's history and starts polling when a focus event occurs.",
+            "",
+            "    @method _onFocus",
+            "    @param {EventFacade} e",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _onFocus: function (e, notifier) {",
+            "        var node   = e.currentTarget,",
+            "            vcData = node.getData(DATA_KEY);",
+            "",
+            "        if (!vcData) {",
+            "            vcData = {};",
+            "            node.setData(DATA_KEY, vcData);",
+            "        }",
+            "",
+            "        vcData.prevVal = node.get(VALUE);",
+            "",
+            "        VC._startPolling(node, notifier, {e: e});",
+            "    },",
+            "",
+            "    /**",
+            "    Starts polling when a node receives a keyDown event.",
+            "",
+            "    @method _onKeyDown",
+            "    @param {EventFacade} e",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _onKeyDown: function (e, notifier) {",
+            "        VC._startPolling(e.currentTarget, notifier, {e: e});",
+            "    },",
+            "",
+            "    /**",
+            "    Starts polling when an IME-related keyUp event occurs on a node.",
+            "",
+            "    @method _onKeyUp",
+            "    @param {EventFacade} e",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _onKeyUp: function (e, notifier) {",
+            "        // These charCodes indicate that an IME has started. We'll restart",
+            "        // polling and give the IME up to 10 seconds (by default) to finish.",
+            "        if (e.charCode === 229 || e.charCode === 197) {",
+            "            VC._startPolling(e.currentTarget, notifier, {",
+            "                e    : e,",
+            "                force: true",
+            "            });",
+            "        }",
+            "    },",
+            "",
+            "    /**",
+            "    Starts polling when a node receives a mouseDown event.",
+            "",
+            "    @method _onMouseDown",
+            "    @param {EventFacade} e",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _onMouseDown: function (e, notifier) {",
+            "        VC._startPolling(e.currentTarget, notifier, {e: e});",
+            "    },",
+            "",
+            "    /**",
+            "    Called when the `valuechange` event receives a new subscriber.",
+            "",
+            "    @method _onSubscribe",
+            "    @param {Node} node",
+            "    @param {Subscription} sub",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @param {Function|String} [filter] Filter function or selector string. Only",
+            "        provided for delegate subscriptions.",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _onSubscribe: function (node, sub, notifier, filter) {",
+            "        var _valuechange, callbacks, nodes;",
+            "",
+            "        callbacks = {",
+            "            blur     : VC._onBlur,",
+            "            focus    : VC._onFocus,",
+            "            keydown  : VC._onKeyDown,",
+            "            keyup    : VC._onKeyUp,",
+            "            mousedown: VC._onMouseDown",
+            "        };",
+            "",
+            "        // Store a utility object on the notifier to hold stuff that needs to be",
+            "        // passed around to trigger event handlers, polling handlers, etc.",
+            "        _valuechange = notifier._valuechange = {};",
+            "",
+            "        if (filter) {",
+            "            // If a filter is provided, then this is a delegated subscription.",
+            "            _valuechange.delegated = true;",
+            "",
+            "            // Add a function to the notifier that we can use to find all",
+            "            // nodes that pass the delegate filter.",
+            "            _valuechange.getNodes = function () {",
+            "                return node.all('input,textarea').filter(filter);",
+            "            };",
+            "",
+            "            // Store the initial values for each descendant of the container",
+            "            // node that passes the delegate filter.",
+            "            _valuechange.getNodes().each(function (child) {",
+            "                if (!child.getData(DATA_KEY)) {",
+            "                    child.setData(DATA_KEY, {prevVal: child.get(VALUE)});",
+            "                }",
+            "            });",
+            "",
+            "            notifier._handles = Y.delegate(callbacks, node, filter, null,",
+            "                notifier);",
+            "        } else {",
+            "            // This is a normal (non-delegated) event subscription.",
+            "",
+            "            if (!node.test('input,textarea')) {",
+            "                return;",
+            "            }",
+            "",
+            "            if (!node.getData(DATA_KEY)) {",
+            "                node.setData(DATA_KEY, {prevVal: node.get(VALUE)});",
+            "            }",
+            "",
+            "            notifier._handles = node.on(callbacks, null, null, notifier);",
+            "        }",
+            "    },",
+            "",
+            "    /**",
+            "    Called when the `valuechange` event loses a subscriber.",
+            "",
+            "    @method _onUnsubscribe",
+            "    @param {Node} node",
+            "    @param {Subscription} subscription",
+            "    @param {SyntheticEvent.Notifier} notifier",
+            "    @protected",
+            "    @static",
+            "    **/",
+            "    _onUnsubscribe: function (node, subscription, notifier) {",
+            "        var _valuechange = notifier._valuechange;",
+            "",
+            "        notifier._handles && notifier._handles.detach();",
+            "",
+            "        if (_valuechange.delegated) {",
+            "            _valuechange.getNodes().each(function (child) {",
+            "                VC._stopPolling(child, notifier);",
+            "            });",
+            "        } else {",
+            "            VC._stopPolling(node, notifier);",
+            "        }",
+            "    }",
+            "};",
+            "",
+            "/**",
+            "Synthetic event that fires when the `value` property of an `<input>` or",
+            "`<textarea>` node changes as a result of a user-initiated keystroke, mouse",
+            "operation, or input method editor (IME) input event.",
+            "",
+            "Unlike the `onchange` event, this event fires when the value actually changes",
+            "and not when the element loses focus. This event also reports IME and",
+            "multi-stroke input more reliably than `oninput` or the various key events across",
+            "browsers.",
+            "",
+            "For performance reasons, only focused nodes are monitored for changes, so",
+            "programmatic value changes on nodes that don't have focus won't be detected.",
+            "",
+            "@example",
+            "",
+            "    YUI().use('event-valuechange', function (Y) {",
+            "        Y.one('#my-input').on('valuechange', function (e) {",
+            "        });",
+            "    });",
+            "",
+            "@event valuechange",
+            "@param {String} prevVal Previous value prior to the latest change.",
+            "@param {String} newVal New value after the latest change.",
+            "@for YUI",
+            "**/",
+            "",
+            "config = {",
+            "    detach: VC._onUnsubscribe,",
+            "    on    : VC._onSubscribe,",
+            "",
+            "    delegate      : VC._onSubscribe,",
+            "    detachDelegate: VC._onUnsubscribe,",
+            "",
+            "    publishConfig: {",
+            "        emitFacade: true",
+            "    }",
+            "};",
+            "",
+            "Y.Event.define('valuechange', config);",
+            "Y.Event.define('valueChange', config); // deprecated, but supported for backcompat",
+            "",
+            "Y.ValueChange = VC;",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"event-focus\", \"event-synthetic\"]});",
+            "",
+            "}());"
+        ],
+        "l": {
+            "1": 1,
+            "33": 1,
+            "82": 32,
+            "89": 32,
+            "90": 0,
+            "91": 0,
+            "94": 32,
+            "96": 32,
+            "97": 16,
+            "99": 16,
+            "107": 16,
+            "108": 21,
+            "112": 21,
+            "113": 18,
+            "114": 3,
+            "115": 2,
+            "118": 21,
+            "124": 21,
+            "125": 4,
+            "127": 4,
+            "128": 2,
+            "133": 21,
+            "134": 2,
+            "138": 16,
+            "154": 33,
+            "155": 10,
+            "158": 23,
+            "160": 23,
+            "164": 23,
+            "165": 1,
+            "189": 27,
+            "190": 0,
+            "193": 27,
+            "195": 27,
+            "196": 0,
+            "197": 0,
+            "200": 27,
+            "204": 27,
+            "205": 11,
+            "206": 1,
+            "208": 10,
+            "209": 10,
+            "217": 17,
+            "219": 17,
+            "220": 32,
+            "224": 17,
+            "240": 76,
+            "241": 0,
+            "244": 76,
+            "246": 76,
+            "247": 76,
+            "249": 76,
+            "251": 76,
+            "252": 47,
+            "254": 29,
+            "268": 99,
+            "270": 99,
+            "271": 99,
+            "286": 1,
+            "299": 3,
+            "302": 3,
+            "303": 0,
+            "304": 0,
+            "307": 3,
+            "309": 3,
+            "322": 1,
+            "337": 3,
+            "338": 2,
+            "355": 21,
+            "371": 26,
+            "373": 26,
+            "383": 26,
+            "385": 26,
+            "387": 17,
+            "391": 17,
+            "392": 34,
+            "397": 17,
+            "398": 36,
+            "399": 21,
+            "403": 17,
+            "408": 9,
+            "409": 0,
+            "412": 9,
+            "413": 9,
+            "416": 9,
+            "431": 26,
+            "433": 26,
+            "435": 26,
+            "436": 17,
+            "437": 36,
+            "440": 9,
+            "471": 1,
+            "483": 1,
+            "484": 1,
+            "486": 1
+        }
+    }
+}
