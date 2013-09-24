@@ -1,0 +1,1088 @@
+{
+    "build/substitute/substitute.js": {
+        "path": "build/substitute/substitute.js",
+        "s": {
+            "1": 1,
+            "2": 1,
+            "3": 11,
+            "4": 11,
+            "5": 33,
+            "6": 33,
+            "7": 11,
+            "8": 22,
+            "9": 22,
+            "10": 0,
+            "11": 22,
+            "12": 22,
+            "13": 22,
+            "14": 22,
+            "15": 22,
+            "16": 11,
+            "17": 11,
+            "18": 22,
+            "19": 22,
+            "20": 3,
+            "21": 22,
+            "22": 6,
+            "23": 0,
+            "24": 6,
+            "25": 2,
+            "26": 4,
+            "27": 4,
+            "28": 4,
+            "29": 0,
+            "30": 4,
+            "31": 3,
+            "32": 1,
+            "33": 16,
+            "34": 5,
+            "35": 5,
+            "36": 22,
+            "37": 22,
+            "38": 3,
+            "39": 11,
+            "40": 5,
+            "41": 1,
+            "42": 1
+        },
+        "b": {
+            "1": [
+                11,
+                22
+            ],
+            "2": [
+                0,
+                22
+            ],
+            "3": [
+                11,
+                11
+            ],
+            "4": [
+                3,
+                19
+            ],
+            "5": [
+                6,
+                16
+            ],
+            "6": [
+                0,
+                6
+            ],
+            "7": [
+                2,
+                4
+            ],
+            "8": [
+                4,
+                0
+            ],
+            "9": [
+                0,
+                4
+            ],
+            "10": [
+                3,
+                1
+            ],
+            "11": [
+                4,
+                1
+            ],
+            "12": [
+                5,
+                11
+            ],
+            "13": [
+                3,
+                19
+            ]
+        },
+        "f": {
+            "1": 1,
+            "2": 11,
+            "3": 5
+        },
+        "fnMap": {
+            "1": {
+                "name": "(anonymous_1)",
+                "line": 1,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 22
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 41
+                    }
+                }
+            },
+            "2": {
+                "name": "(anonymous_2)",
+                "line": 83,
+                "loc": {
+                    "start": {
+                        "line": 83,
+                        "column": 17
+                    },
+                    "end": {
+                        "line": 83,
+                        "column": 44
+                    }
+                }
+            },
+            "3": {
+                "name": "(anonymous_3)",
+                "line": 157,
+                "loc": {
+                    "start": {
+                        "line": 157,
+                        "column": 25
+                    },
+                    "end": {
+                        "line": 157,
+                        "column": 48
+                    }
+                }
+            }
+        },
+        "statementMap": {
+            "1": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 170,
+                    "column": 66
+                }
+            },
+            "2": {
+                "start": {
+                    "line": 11,
+                    "column": 4
+                },
+                "end": {
+                    "line": 163,
+                    "column": 3
+                }
+            },
+            "3": {
+                "start": {
+                    "line": 84,
+                    "column": 8
+                },
+                "end": {
+                    "line": 85,
+                    "column": 28
+                }
+            },
+            "4": {
+                "start": {
+                    "line": 87,
+                    "column": 8
+                },
+                "end": {
+                    "line": 153,
+                    "column": 3
+                }
+            },
+            "5": {
+                "start": {
+                    "line": 88,
+                    "column": 12
+                },
+                "end": {
+                    "line": 88,
+                    "column": 44
+                }
+            },
+            "6": {
+                "start": {
+                    "line": 89,
+                    "column": 12
+                },
+                "end": {
+                    "line": 91,
+                    "column": 13
+                }
+            },
+            "7": {
+                "start": {
+                    "line": 90,
+                    "column": 16
+                },
+                "end": {
+                    "line": 90,
+                    "column": 22
+                }
+            },
+            "8": {
+                "start": {
+                    "line": 92,
+                    "column": 12
+                },
+                "end": {
+                    "line": 92,
+                    "column": 37
+                }
+            },
+            "9": {
+                "start": {
+                    "line": 93,
+                    "column": 12
+                },
+                "end": {
+                    "line": 95,
+                    "column": 13
+                }
+            },
+            "10": {
+                "start": {
+                    "line": 94,
+                    "column": 16
+                },
+                "end": {
+                    "line": 94,
+                    "column": 22
+                }
+            },
+            "11": {
+                "start": {
+                    "line": 98,
+                    "column": 12
+                },
+                "end": {
+                    "line": 98,
+                    "column": 42
+                }
+            },
+            "12": {
+                "start": {
+                    "line": 99,
+                    "column": 12
+                },
+                "end": {
+                    "line": 99,
+                    "column": 24
+                }
+            },
+            "13": {
+                "start": {
+                    "line": 100,
+                    "column": 12
+                },
+                "end": {
+                    "line": 100,
+                    "column": 24
+                }
+            },
+            "14": {
+                "start": {
+                    "line": 101,
+                    "column": 12
+                },
+                "end": {
+                    "line": 101,
+                    "column": 35
+                }
+            },
+            "15": {
+                "start": {
+                    "line": 102,
+                    "column": 12
+                },
+                "end": {
+                    "line": 105,
+                    "column": 13
+                }
+            },
+            "16": {
+                "start": {
+                    "line": 103,
+                    "column": 16
+                },
+                "end": {
+                    "line": 103,
+                    "column": 44
+                }
+            },
+            "17": {
+                "start": {
+                    "line": 104,
+                    "column": 16
+                },
+                "end": {
+                    "line": 104,
+                    "column": 42
+                }
+            },
+            "18": {
+                "start": {
+                    "line": 108,
+                    "column": 12
+                },
+                "end": {
+                    "line": 108,
+                    "column": 23
+                }
+            },
+            "19": {
+                "start": {
+                    "line": 111,
+                    "column": 12
+                },
+                "end": {
+                    "line": 113,
+                    "column": 13
+                }
+            },
+            "20": {
+                "start": {
+                    "line": 112,
+                    "column": 16
+                },
+                "end": {
+                    "line": 112,
+                    "column": 36
+                }
+            },
+            "21": {
+                "start": {
+                    "line": 115,
+                    "column": 12
+                },
+                "end": {
+                    "line": 146,
+                    "column": 13
+                }
+            },
+            "22": {
+                "start": {
+                    "line": 116,
+                    "column": 16
+                },
+                "end": {
+                    "line": 139,
+                    "column": 17
+                }
+            },
+            "23": {
+                "start": {
+                    "line": 117,
+                    "column": 20
+                },
+                "end": {
+                    "line": 117,
+                    "column": 37
+                }
+            },
+            "24": {
+                "start": {
+                    "line": 119,
+                    "column": 20
+                },
+                "end": {
+                    "line": 138,
+                    "column": 21
+                }
+            },
+            "25": {
+                "start": {
+                    "line": 120,
+                    "column": 24
+                },
+                "end": {
+                    "line": 120,
+                    "column": 58
+                }
+            },
+            "26": {
+                "start": {
+                    "line": 122,
+                    "column": 24
+                },
+                "end": {
+                    "line": 122,
+                    "column": 42
+                }
+            },
+            "27": {
+                "start": {
+                    "line": 125,
+                    "column": 24
+                },
+                "end": {
+                    "line": 125,
+                    "column": 50
+                }
+            },
+            "28": {
+                "start": {
+                    "line": 126,
+                    "column": 24
+                },
+                "end": {
+                    "line": 128,
+                    "column": 25
+                }
+            },
+            "29": {
+                "start": {
+                    "line": 127,
+                    "column": 28
+                },
+                "end": {
+                    "line": 127,
+                    "column": 53
+                }
+            },
+            "30": {
+                "start": {
+                    "line": 132,
+                    "column": 24
+                },
+                "end": {
+                    "line": 137,
+                    "column": 25
+                }
+            },
+            "31": {
+                "start": {
+                    "line": 134,
+                    "column": 28
+                },
+                "end": {
+                    "line": 134,
+                    "column": 62
+                }
+            },
+            "32": {
+                "start": {
+                    "line": 136,
+                    "column": 28
+                },
+                "end": {
+                    "line": 136,
+                    "column": 45
+                }
+            },
+            "33": {
+                "start": {
+                    "line": 140,
+                    "column": 10
+                },
+                "end": {
+                    "line": 146,
+                    "column": 13
+                }
+            },
+            "34": {
+                "start": {
+                    "line": 142,
+                    "column": 16
+                },
+                "end": {
+                    "line": 142,
+                    "column": 47
+                }
+            },
+            "35": {
+                "start": {
+                    "line": 143,
+                    "column": 5
+                },
+                "end": {
+                    "line": 143,
+                    "column": 23
+                }
+            },
+            "36": {
+                "start": {
+                    "line": 148,
+                    "column": 12
+                },
+                "end": {
+                    "line": 148,
+                    "column": 59
+                }
+            },
+            "37": {
+                "start": {
+                    "line": 150,
+                    "column": 3
+                },
+                "end": {
+                    "line": 152,
+                    "column": 4
+                }
+            },
+            "38": {
+                "start": {
+                    "line": 151,
+                    "column": 4
+                },
+                "end": {
+                    "line": 151,
+                    "column": 17
+                }
+            },
+            "39": {
+                "start": {
+                    "line": 156,
+                    "column": 2
+                },
+                "end": {
+                    "line": 162,
+                    "column": 2
+                }
+            },
+            "40": {
+                "start": {
+                    "line": 158,
+                    "column": 4
+                },
+                "end": {
+                    "line": 158,
+                    "column": 52
+                }
+            },
+            "41": {
+                "start": {
+                    "line": 165,
+                    "column": 4
+                },
+                "end": {
+                    "line": 165,
+                    "column": 30
+                }
+            },
+            "42": {
+                "start": {
+                    "line": 166,
+                    "column": 4
+                },
+                "end": {
+                    "line": 166,
+                    "column": 30
+                }
+            }
+        },
+        "branchMap": {
+            "1": {
+                "line": 89,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 89,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 89,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "2": {
+                "line": 93,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 93,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 93,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 93,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 93,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "3": {
+                "line": 102,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 102,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 102,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 102,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 102,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "line": 111,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 111,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 111,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 111,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 111,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "line": 115,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 115,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 115,
+                            "column": 12
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 115,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 115,
+                            "column": 12
+                        }
+                    }
+                ]
+            },
+            "6": {
+                "line": 116,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 116,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 116,
+                            "column": 16
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 116,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 116,
+                            "column": 16
+                        }
+                    }
+                ]
+            },
+            "7": {
+                "line": 119,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 119,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 119,
+                            "column": 20
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 119,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 119,
+                            "column": 20
+                        }
+                    }
+                ]
+            },
+            "8": {
+                "line": 122,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 122,
+                            "column": 31
+                        },
+                        "end": {
+                            "line": 122,
+                            "column": 35
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 122,
+                            "column": 39
+                        },
+                        "end": {
+                            "line": 122,
+                            "column": 41
+                        }
+                    }
+                ]
+            },
+            "9": {
+                "line": 126,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 126,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 126,
+                            "column": 24
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 126,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 126,
+                            "column": 24
+                        }
+                    }
+                ]
+            },
+            "10": {
+                "line": 132,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 132,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 132,
+                            "column": 24
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 132,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 132,
+                            "column": 24
+                        }
+                    }
+                ]
+            },
+            "11": {
+                "line": 132,
+                "type": "binary-expr",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 132,
+                            "column": 28
+                        },
+                        "end": {
+                            "line": 132,
+                            "column": 68
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 133,
+                            "column": 28
+                        },
+                        "end": {
+                            "line": 133,
+                            "column": 37
+                        }
+                    }
+                ]
+            },
+            "12": {
+                "line": 140,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 140,
+                            "column": 10
+                        },
+                        "end": {
+                            "line": 140,
+                            "column": 10
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 140,
+                            "column": 10
+                        },
+                        "end": {
+                            "line": 140,
+                            "column": 10
+                        }
+                    }
+                ]
+            },
+            "13": {
+                "line": 150,
+                "type": "if",
+                "locations": [
+                    {
+                        "start": {
+                            "line": 150,
+                            "column": 3
+                        },
+                        "end": {
+                            "line": 150,
+                            "column": 3
+                        }
+                    },
+                    {
+                        "start": {
+                            "line": 150,
+                            "column": 3
+                        },
+                        "end": {
+                            "line": 150,
+                            "column": 3
+                        }
+                    }
+                ]
+            }
+        },
+        "code": [
+            "(function () { YUI.add('substitute', function (Y, NAME) {",
+            "",
+            "/**",
+            " * String variable substitution and string formatting.",
+            " * If included, the substitute method is added to the YUI instance.",
+            " *",
+            " * @module substitute",
+            " * @deprecated",
+            " */",
+            "",
+            "    var L = Y.Lang, DUMP = 'dump', SPACE = ' ', LBRACE = '{', RBRACE = '}',",
+            "\t\tsavedRegExp =  /(~-(\\d+)-~)/g, lBraceRegExp = /\\{LBRACE\\}/g, rBraceRegExp = /\\{RBRACE\\}/g,",
+            "",
+            "    /**",
+            "     * The following methods are added to the YUI instance",
+            "     *",
+            "     * <strong>Use `Y.Lang.sub` or `Y.Template` instead.</strong>",
+            "     * @class YUI~substitute",
+            "     * @deprecated",
+            "     */",
+            "",
+            "/**",
+            "<strong>Use `Y.Lang.sub` or `Y.Template` instead.</strong>",
+            "",
+            "",
+            "",
+            "Does `{placeholder}` substitution on a string.  The object passed as the",
+            "second parameter provides values to replace the `{placeholder}`s.",
+            "{placeholder} token names must match property names of the object.  For",
+            "example",
+            "",
+            "`var greeting = Y.substitute(\"Hello, {who}!\", { who: \"World\" });`",
+            "",
+            "`{placeholder}` tokens that are undefined on the object map will be left in",
+            "tact (leaving unsightly \"{placeholder}\"s in the output string).  If your",
+            "replacement strings *should* include curly braces, use `{LBRACE}` and",
+            "`{RBRACE}` in your object map string value.",
+            "",
+            "If a function is passed as a third argument, it will be called for each",
+            "{placeholder} found.  The {placeholder} name is passed as the first value",
+            "and the value from the object map is passed as the second.  If the",
+            "{placeholder} contains a space, the first token will be used to identify",
+            "the object map property and the remainder will be passed as a third",
+            "argument to the function.  See below for an example.",
+            "",
+            "If the value in the object map for a given {placeholder} is an object and",
+            "the `dump` module is loaded, the replacement value will be the string",
+            "result of calling `Y.dump(...)` with the object as input.  Include a",
+            "numeric second token in the {placeholder} to configure the depth of the call",
+            "to `Y.dump(...)`, e.g. \"{someObject 2}\".  See the",
+            "<a href=\"../classes/YUI.html#method_dump\">`dump`</a> method for details.",
+            "",
+            "    @method substitute",
+            "    @deprecated",
+            "    @param {string} s The string that will be modified.",
+            "    @param {object} o An object containing the replacement values.",
+            "    @param {function} f An optional function that can be used to",
+            "                        process each match.  It receives the key,",
+            "                        value, and any extra metadata included with",
+            "                        the key inside of the braces.",
+            "    @param {boolean} recurse if true, the replacement will be recursive,",
+            "                        letting you have replacement tokens in replacement text.",
+            "                        The default is false.",
+            "    @return {string} the substituted string.",
+            "",
+            "    @example",
+            "",
+            "        function getAttrVal(key, value, name) {",
+            "            // Return a string describing the named attribute and its value if",
+            "            // the first token is @. Otherwise, return the value from the",
+            "            // replacement object.",
+            "            if (key === \"@\") {",
+            "                value += name + \" Value: \" + myObject.get(name);",
+            "            }",
+            "            return value;",
+            "        }",
+            "",
+            "        // Assuming myObject.set('foo', 'flowers'),",
+            "        // => \"Attr: foo Value: flowers\"",
+            "        var attrVal = Y.substitute(\"{@ foo}\", { \"@\": \"Attr: \" }, getAttrVal);",
+            "    **/",
+            "",
+            "    substitute = function(s, o, f, recurse) {",
+            "        var i, j, k, key, v, meta, saved = [], token, dump,",
+            "            lidx = s.length;",
+            "",
+            "        for (;;) {",
+            "            i = s.lastIndexOf(LBRACE, lidx);",
+            "            if (i < 0) {",
+            "                break;",
+            "            }",
+            "            j = s.indexOf(RBRACE, i);",
+            "            if (i + 1 >= j) {",
+            "                break;",
+            "            }",
+            "",
+            "            //Extract key and meta info",
+            "            token = s.substring(i + 1, j);",
+            "            key = token;",
+            "            meta = null;",
+            "            k = key.indexOf(SPACE);",
+            "            if (k > -1) {",
+            "                meta = key.substring(k + 1);",
+            "                key = key.substring(0, k);",
+            "            }",
+            "",
+            "            // lookup the value",
+            "            v = o[key];",
+            "",
+            "            // if a substitution function was provided, execute it",
+            "            if (f) {",
+            "                v = f(key, v, meta);",
+            "            }",
+            "",
+            "            if (L.isObject(v)) {",
+            "                if (!Y.dump) {",
+            "                    v = v.toString();",
+            "                } else {",
+            "                    if (L.isArray(v)) {",
+            "                        v = Y.dump(v, parseInt(meta, 10));",
+            "                    } else {",
+            "                        meta = meta || '';",
+            "",
+            "                        // look for the keyword 'dump', if found force obj dump",
+            "                        dump = meta.indexOf(DUMP);",
+            "                        if (dump > -1) {",
+            "                            meta = meta.substring(4);",
+            "                        }",
+            "",
+            "                        // use the toString if it is not the Object toString",
+            "                        // and the 'dump' meta info was not found",
+            "                        if (v.toString === Object.prototype.toString ||",
+            "                            dump > -1) {",
+            "                            v = Y.dump(v, parseInt(meta, 10));",
+            "                        } else {",
+            "                            v = v.toString();",
+            "                        }",
+            "                    }",
+            "                }",
+            "\t\t\t} else if (L.isUndefined(v)) {",
+            "                // This {block} has no replace string. Save it for later.",
+            "                v = '~-' + saved.length + '-~';",
+            "\t\t\t\t\tsaved.push(token);",
+            "",
+            "                // break;",
+            "            }",
+            "",
+            "            s = s.substring(0, i) + v + s.substring(j + 1);",
+            "",
+            "\t\t\tif (!recurse) {",
+            "\t\t\t\tlidx = i - 1;",
+            "\t\t\t} ",
+            "\t\t}",
+            "\t\t// restore saved {block}s and escaped braces",
+            "",
+            "\t\treturn s",
+            "\t\t\t.replace(savedRegExp, function (str, p1, p2) {",
+            "\t\t\t\treturn LBRACE + saved[parseInt(p2,10)] + RBRACE;",
+            "\t\t\t})",
+            "\t\t\t.replace(lBraceRegExp, LBRACE)",
+            "\t\t\t.replace(rBraceRegExp, RBRACE)",
+            "\t\t;",
+            "\t};",
+            "",
+            "    Y.substitute = substitute;",
+            "    L.substitute = substitute;",
+            "",
+            "",
+            "",
+            "}, '@VERSION@', {\"requires\": [\"yui-base\"], \"optional\": [\"dump\"]});",
+            "",
+            "}());"
+        ]
+    }
+}
